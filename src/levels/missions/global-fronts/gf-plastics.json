@@ -1,0 +1,73 @@
+{
+  "id": "gf-plastics",
+  "title": "The Plastics Treaty",
+  "blurb": "Plastic keeps flowing into the sea, and there is still no global treaty to stop it at the source. Clean the water, cut the flow and win the treaty.",
+  "region": "global-fronts",
+  "theme": "pollution",
+  "issue": "gf-plastics-issue",
+  "catalogue": [
+    49,
+    86
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 205034,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.69,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.2,
+    "pressure": [
+      "town"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Plastic flowing from rivers and coasts",
+      "strength": 3,
+      "from": "edge",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "ocean",
+        "reef",
+        "seagrass",
+        "kelp"
+      ],
+      "catalogue": [
+        49,
+        86,
+        94
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "albatross",
+      "name": "Albatross",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 22,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Restore clean water",
+    "defend": "Collection booms",
+    "remove": "Haul out debris",
+    "protect": "Plastic-free reserve",
+    "campaign": "Global treaty campaign"
+  },
+  "realWorld": "Choose reusable over single-use plastic, support a legally binding global plastics treaty, and join a local cleanup."
+}

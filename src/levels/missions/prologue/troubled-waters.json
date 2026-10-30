@@ -1,0 +1,72 @@
+{
+  "id": "prologue-3",
+  "title": "Troubled Waters: A Polluted River",
+  "blurb": "A factory plume drifts downstream. Clean it up, then campaign against the source.",
+  "region": "prologue",
+  "theme": "freshwater",
+  "issue": "prologue-river",
+  "catalogue": [
+    51
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 303,
+  "turns": 10,
+  "energy": 4,
+  "floor": 0.7,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town",
+      "mine"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Factory runoff",
+      "strength": 3,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "otter",
+      "name": "Giant otter",
+      "habitat": [
+        "river",
+        "wetland"
+      ],
+      "need": 14
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Booms",
+    "remove": "Clean up",
+    "protect": "Buffer strip",
+    "campaign": "Ban the discharge"
+  },
+  "hints": [
+    "A plume flows downstream and hurts every tile it passes. Remove cleans one tile, but the factory keeps releasing more.",
+    "Campaign (3\u26a1) makes a threat 1 weaker for good. At 0 it has stopped for good: that is the way to win the \u2605\u2605\u2605.",
+    "Stars: \u2605 survive \u00b7 \u2605\u2605 finish with the ecosystem at least as healthy as you started \u00b7 \u2605\u2605\u2605 every threat stopped."
+  ],
+  "realWorld": "Never pour paint, chemicals or old medicines down a drain: use your local hazardous-waste drop-off, and join a river clean-up or water-quality monitoring group."
+}

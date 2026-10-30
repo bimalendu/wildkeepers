@@ -1,0 +1,79 @@
+{
+  "id": "oc-koalas",
+  "title": "Koalas and the Bulldozers",
+  "blurb": "Housing and farm clearing are fragmenting koala forest on the east coast. Hold the edge and keep the habitat connected.",
+  "region": "oceania",
+  "theme": "land",
+  "issue": "oc-koalas-issue",
+  "catalogue": [
+    1,
+    10
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 210119,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.59,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Land clearing for development",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        1,
+        10,
+        88
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "New roads open the forest",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        1,
+        10,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "koala",
+      "name": "Koala",
+      "habitat": [
+        "forest"
+      ],
+      "need": 35,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Habitat watch",
+    "remove": "Stop a clearing",
+    "protect": "Koala reserve",
+    "campaign": "Habitat-law campaign"
+  },
+  "realWorld": "Support groups that buy and protect koala habitat, slow down on koala-crossing roads, and ask local councils how they protect bushland."
+}

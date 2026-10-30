@@ -1,0 +1,96 @@
+{
+  "id": "mc-saiga",
+  "title": "The Saiga Die-Off",
+  "blurb": "In about three weeks a bacterial disease killed around 200,000 saigas, more than two thirds of the world population. Protect the herds, quarantine the outbreak and keep the steppe connected.",
+  "region": "middle-east-central-asia",
+  "theme": "wildlife",
+  "issue": "mc-saiga-issue",
+  "catalogue": [
+    73
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 208085,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.72,
+  "map": {
+    "base": "grass",
+    "accent": "wetland",
+    "accentAmount": 0.2,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "disease",
+      "kind": "disease",
+      "behaviour": "hunt",
+      "label": "Haemorrhagic septicaemia outbreak",
+      "strength": 2,
+      "every": 2,
+      "hurts": [
+        "saiga",
+        "goitered-gazelle"
+      ],
+      "from": "species",
+      "sources": 4,
+      "catalogue": [
+        73,
+        46,
+        11
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Fences and farms split the herds",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        73,
+        46,
+        11
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "saiga",
+      "name": "Saiga antelope",
+      "habitat": [
+        "grass",
+        "desert"
+      ],
+      "need": 31,
+      "homes": 2
+    },
+    {
+      "id": "goitered-gazelle",
+      "name": "Goitered gazelle",
+      "habitat": [
+        "grass",
+        "desert"
+      ],
+      "need": 31,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Reseed",
+    "defend": "Herd protection",
+    "remove": "Contain an outbreak",
+    "protect": "Calving reserve",
+    "campaign": "Veterinary monitoring campaign"
+  },
+  "realWorld": "Support saiga conservation groups, and if you handle livestock or travel to rural areas, follow animal-disease rules on moving animals and reporting sick ones."
+}

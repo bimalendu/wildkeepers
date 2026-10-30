@@ -1,0 +1,197 @@
+import type { RegionSpec } from './types';
+
+const CHECKED = '2026-10-29';
+
+const spec: RegionSpec = {
+  id: 'north-america',
+  code: 'na',
+  name: 'North America',
+  blurb: 'Prairie, boreal forest and two long coasts: plowed grasslands, huge fires, a river mouth starved of oxygen, pines killed by a non-native fungus and whales that share their sea with ships and gear.',
+  tier1: [
+    {
+      mission: {
+        id: 'na-prairie', title: 'The Vanishing Prairie', theme: 'land', arch: 'frontier', catalogue: [3],
+        blurb: 'Every year farmers convert native grassland to cropland. Hold the edge and restore the prairie.',
+        threats: ['Plowing for row crops', 'New roads and oil pads'],
+        species: [{ id: 'prairie-dog', name: 'Black-tailed prairie dog', habitat: ['grass'] }],
+        map: { base: 'grass', accent: 'wetland', accentAmount: 0.2, pressure: ['farm', 'road'], side: 'n', depth: 6 },
+        labels: { restore: 'Reseed native grass', defend: 'Grassland easement', remove: 'Stop a plow-up', protect: 'Conservation title', campaign: 'Sodsaver campaign' },
+        realWorld: 'Choose beef from ranchers who keep native grass, support land trusts that buy conservation easements, and ask what your local farm bill does for grassland.',
+      },
+      driver: 'land-sea-use',
+      priority: { severity: 4, urgency: 4, irreversibility: 4, reach: 3 },
+      drivers: [
+        { name: 'Conversion to row crops (wheat, corn, soy)', catalogue: [3] },
+        { name: 'Roads, wells and wind and oil development', catalogue: [11] },
+        { name: 'Tree planting on native grassland', catalogue: [21] },
+      ],
+      sites: ['The Northern Great Plains', 'A prairie-pothole wetland', 'A prairie dog town'],
+      fact: {
+        text: 'WWF’s 2024 Plowprint report estimated that 1.9 million acres of grassland in the US and Canadian Great Plains were converted to cropland in 2022, an improvement on the previous ten-year average of 2.6 million acres a year; about 55% of the Plains’ grassland remains intact.',
+        source: 'World Wildlife Fund, Plowprint Report 2024 (press release, 26 September 2024)',
+        url: 'https://www.3blmedia.com/news/grassland-loss-great-plains-persists-19-million-acres-destroyed-2022.md',
+        also: [{ source: 'Food and Environment Reporting Network, “Grassland losses slow in Great Plains”', url: 'https://thefern.org/ag_insider/grassland-losses-slow-in-great-plains/amp/' }],
+        checked: CHECKED,
+      },
+    },
+    {
+      mission: {
+        id: 'na-boreal-fire', title: 'The Boreal Fire Season', theme: 'climate', arch: 'fire', catalogue: [44, 45],
+        blurb: 'The 2023 fire season burned more than 14 million hectares of Canada’s forest. Cut firebreaks, put out the fire and protect unburnt refuges.',
+        threats: ['Boreal wildfire', 'Clearing and roads at the forest edge'],
+        species: [{ id: 'lynx', name: 'Canada lynx', habitat: ['forest'] }],
+        map: { base: 'forest', accent: 'wetland', accentAmount: 0.2, pressure: ['road', 'town'], side: 'w', depth: 4 },
+        labels: { restore: 'Replant', defend: 'Fire guard', remove: 'Put out fire', protect: 'Unburnt refuge', campaign: 'Climate and fire campaign' },
+        realWorld: 'Follow fire bans and smoke advisories, prepare your own evacuation plan if you live near forest, and support groups that restore burned habitat.',
+      },
+      driver: 'climate',
+      priority: { severity: 4, urgency: 5, irreversibility: 3, reach: 4 },
+      drivers: [
+        { name: 'Drought and extreme heat', catalogue: [45] },
+        { name: 'Longer fire seasons', catalogue: [44] },
+        { name: 'Fuel and ignitions at the forest edge', catalogue: [44] },
+      ],
+      sites: ['A boreal forest block', 'A peatland that holds carbon', 'A community on the forest edge'],
+      fact: {
+        text: 'Natural Resources Canada says that in 2023 over 6,800 wildland fires burned more than 14.6 million hectares of Canada’s forest area, roughly seven times the typical annual area, compared with an average of more than 2.1 million hectares in an ordinary year.',
+        source: 'Natural Resources Canada, Forest fires',
+        url: 'https://natural-resources.canada.ca/our-natural-resources/forests/wildland-fires-insects-disturbances/forest-fires/13143',
+        checked: CHECKED,
+      },
+    },
+    {
+      mission: {
+        id: 'na-lights', title: 'Lights Out for Migrants', theme: 'pollution', arch: 'frontier', catalogue: [60, 78],
+        blurb: 'Night-flying songbirds are drawn to city lights and get disoriented. Dim the towers, keep dark stopovers and win a bird-safe building law.',
+        threats: ['Skyglow spreading from the city', 'New lit towers and glass'],
+        species: [{ id: 'wood-thrush', name: 'Wood thrush', habitat: ['forest'] }],
+        map: { base: 'forest', accent: 'wetland', accentAmount: 0.25, pressure: ['town'], side: 's', depth: 5 },
+        labels: { restore: 'Replant a stopover', defend: 'Lights out tonight', remove: 'Switch off a tower’s lights', protect: 'Dark-sky stopover reserve', campaign: 'Bird-safe building campaign' },
+        realWorld: 'Turn off or shield outdoor lights at night in spring and autumn, close blinds in tall buildings, and ask building owners to join a Lights Out programme.',
+      },
+      driver: 'pollution',
+      priority: { severity: 3, urgency: 3, irreversibility: 3, reach: 4 },
+      drivers: [
+        { name: 'Bright exterior lighting at night', catalogue: [60] },
+        { name: 'Glass towers on flyways', catalogue: [78] },
+        { name: 'Loss of dark stopover habitat', catalogue: [78] },
+      ],
+      sites: ['A coastal city on a flyway', 'A forest stopover in the suburbs', 'A lake-shore migrant trap'],
+      fact: {
+        text: 'A 2017 study in PNAS found that New York’s Tribute in Light installation altered the behaviour of an estimated 1.1 million migrating birds over seven nights across seven years, making them gather in high densities, slow down and circle; the disruption disappeared when the lights were switched off.',
+        source: 'Van Doren et al., PNAS (2017), “High-intensity urban light installation dramatically alters nocturnal bird migration”',
+        url: 'https://doi.org/10.1073/pnas.1708574114',
+        also: [{ source: 'Audubon, “How to bring Lights Out to a city near you” (18 March 2022)', url: 'https://www.audubon.org/news/how-bring-lights-out-city-near-you' }],
+        checked: CHECKED,
+      },
+    },
+    {
+      mission: {
+        id: 'na-whitebark', title: 'The Whitebark Pine', theme: 'plants', arch: 'disease', catalogue: [67],
+        blurb: 'A non-native fungus is killing whitebark pines across the West’s high-elevation forests. Contain the rust and plant the resistant trees.',
+        threats: ['White pine blister rust', 'Beetles and clearing at the forest edge'],
+        species: [{ id: 'whitebark', name: 'Whitebark pine', habitat: ['forest'] }],
+        map: { base: 'forest', accent: 'grass', accentAmount: 0.2, river: false },
+        labels: { restore: 'Plant resistant seedlings', defend: 'Protect a seed tree', remove: 'Prune infected trees', protect: 'Seed-source reserve', campaign: 'Research and listing campaign' },
+        realWorld: 'Stay on trails and report dead or dying high-elevation pines to the land agency, and support groups that collect seed from rust-resistant trees.',
+      },
+      driver: 'invasives',
+      priority: { severity: 4, urgency: 3, irreversibility: 5, reach: 3 },
+      drivers: [
+        { name: 'The introduced rust fungus Cronartium ribicola', catalogue: [67] },
+        { name: 'Mountain pine beetle outbreaks', catalogue: [67] },
+      ],
+      sites: ['A high-elevation whitebark stand', 'A seed-orchard of resistant trees', 'A burned slope waiting for replanting'],
+      fact: {
+        text: 'The US Fish and Wildlife Service listed whitebark pine as a threatened species on 14 December 2022, saying white pine blister rust, a non-native fungal disease, remains the primary threat and that, as of 2016, an estimated 51% of all standing whitebark pine trees are dead.',
+        source: 'US Fish and Wildlife Service press release (December 2022)',
+        url: 'https://fws.gov/press-release/2022-12/whitebark-pine-receives-esa-protection-threatened-species',
+        checked: CHECKED,
+      },
+    },
+    {
+      mission: {
+        id: 'na-dead-zone', title: 'The Gulf’s Dead Zone', theme: 'freshwater', arch: 'poison', catalogue: [51],
+        blurb: 'Nutrient runoff from the Mississippi basin starves the Gulf of oxygen each summer. Buffer the farms, clean the river and win a nutrient-cut law.',
+        threats: ['Fertiliser runoff', 'Sewage and manure inflows'],
+        species: [{ id: 'blue-crab', name: 'Blue crab', habitat: ['river'] }],
+        labels: { restore: 'Rebuild wetland', defend: 'Cover crops', remove: 'Clean up a spill', protect: 'Riverside buffer', campaign: 'Nutrient-cut campaign' },
+        realWorld: 'Use less fertiliser on lawns and gardens, buy from farms that use cover crops and buffer strips, and support groups restoring wetlands along rivers.',
+      },
+      driver: 'pollution',
+      priority: { severity: 4, urgency: 3, irreversibility: 3, reach: 4 },
+      drivers: [
+        { name: 'Fertiliser runoff from farmland', catalogue: [51] },
+        { name: 'Drained wetlands that no longer filter water', catalogue: [4] },
+        { name: 'Sewage and manure', catalogue: [58] },
+      ],
+      sites: ['The Mississippi–Atchafalaya basin', 'A Louisiana coastal marsh', 'A shrimp and crab fishing ground'],
+      fact: {
+        text: 'NOAA-supported scientists measured the 2026 Gulf dead zone at about 1,332 square miles, one of the smallest on record; excess nutrients from the Mississippi-Atchafalaya River Basin drive it, and the Hypoxia Task Force aims to cut the five-year average to under 1,900 square miles by 2035.',
+        source: 'NOAA-supported scientists’ announcement (5 August 2026), via the Gulf Hypoxia monitoring project',
+        url: 'https://gulfhypoxia.net/2026/08/',
+        also: [{ source: 'NOAA National Centers for Coastal Ocean Science (31 July 2025), on the dead-zone target', url: 'https://coastalscience.noaa.gov/news/below-average-summer-2025-dead-zone-measured-in-gulf/' }],
+        checked: CHECKED,
+      },
+    },
+    {
+      mission: {
+        id: 'na-right-whale', title: 'Right Whales and Ropes', theme: 'wildlife', arch: 'fishing', catalogue: [80, 61],
+        blurb: 'Ships and fishing gear are the two leading causes of death for the North Atlantic right whale, of which about 380 were alive at the start of 2024. Slow the ships, clear the gear and protect the nursery waters.',
+        threats: ['Ship strikes on shipping lanes', 'Entangling fishing gear'],
+        species: [{ id: 'right-whale', name: 'North Atlantic right whale', habitat: ['ocean'] }],
+        map: { base: 'ocean', accent: 'kelp', accentAmount: 0.15, pressure: ['town'], side: 's', depth: 3 },
+        labels: { restore: 'Rebuild feeding grounds', defend: 'Slow zone', remove: 'Retrieve lost gear', protect: 'Seasonal whale sanctuary', campaign: 'Rope and speed-rule campaign' },
+        realWorld: 'Choose seafood from fisheries using whale-safe, ropeless or weak-rope gear, keep to speed limits when boating in slow zones, and report whale sightings.',
+      },
+      driver: 'exploitation',
+      priority: { severity: 5, urgency: 4, irreversibility: 5, reach: 2 },
+      drivers: [
+        { name: 'Entanglement in fishing gear', catalogue: [80] },
+        { name: 'Vessel strikes', catalogue: [80] },
+        { name: 'Underwater noise', catalogue: [61] },
+      ],
+      sites: ['The Gulf of St. Lawrence', 'A southeastern calving ground', 'The Cape Cod Bay feeding ground'],
+      fact: {
+        text: 'NOAA Fisheries estimated 384 individual North Atlantic right whales at the start of 2024 (an October 2025 update, with a margin of +10/-9), and names entanglement in fishing gear and vessel strikes as the leading causes of North Atlantic right whale mortality.',
+        source: 'NOAA Fisheries, North Atlantic right whale species page',
+        url: 'https://www.fisheries.noaa.gov/species/north-atlantic-right-whale',
+        checked: CHECKED,
+      },
+    },
+    {
+      mission: {
+        id: 'na-kelp', title: 'The Kelp that Vanished', theme: 'ocean', arch: 'heat', catalogue: [7, 71],
+        blurb: 'A marine heatwave and a disease that killed the sea stars let urchins strip the kelp. Cool the water, protect the survivors and bring the predators back.',
+        threats: ['Marine heatwave', 'Sea star wasting disease'],
+        species: [{ id: 'bull-kelp', name: 'Bull kelp', habitat: ['kelp'] }, { id: 'sunflower-star', name: 'Sunflower sea star', habitat: ['ocean', 'kelp'] }],
+        map: { base: 'ocean', accent: 'kelp', accentAmount: 0.45, pressure: ['town'], side: 's', depth: 3 },
+        labels: { restore: 'Replant kelp', defend: 'Cool-water refuge', remove: 'Isolate sick stars', protect: 'Kelp reserve', campaign: 'Climate-action campaign' },
+        realWorld: 'Choose sustainable seafood, keep your own emissions down, and support kelp-restoration and sea-star recovery projects along the Pacific coast.',
+      },
+      driver: 'climate',
+      priority: { severity: 3, urgency: 4, irreversibility: 4, reach: 3 },
+      drivers: [
+        { name: 'Marine heatwaves', catalogue: [37] },
+        { name: 'Sea star wasting disease', catalogue: [71] },
+        { name: 'Purple urchin takeover', catalogue: [7] },
+      ],
+      sites: ['The northern California coast', 'An urchin barren', 'A surviving bull-kelp forest'],
+      fact: {
+        text: 'A peer-reviewed study found that bull kelp forests suffered unprecedented losses along 350 km of coastline in northern California from 2014 through 2019; the shift was initiated by a multi-year marine heatwave, after a sea star wasting epidemic that began in 2013 sharply reduced several sea star species, including the sunflower star.',
+        source: 'Peer-reviewed study on northern California bull kelp, via PubMed Central',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7935997',
+        checked: CHECKED,
+      },
+    },
+  ],
+  tier2: [
+    { id: 'na-condor', title: 'Condors and lead', theme: 'wildlife', driver: 'pollution', priority: { severity: 4, urgency: 3, irreversibility: 4, reach: 2 }, catalogue: [62], drivers: [{ name: 'Lead poisoning from the condors’ food' }], sites: ['A condor release site'] },
+    { id: 'na-bats', title: 'White-nose syndrome in bats', theme: 'wildlife', driver: 'invasives', priority: { severity: 4, urgency: 3, irreversibility: 4, reach: 3 }, catalogue: [70], drivers: [{ name: 'A fungus that spreads in caves' }, { name: 'Disturbed hibernation sites' }], sites: ['A hibernation cave'] },
+    { id: 'na-pika', title: 'Pikas and the mountain escalator', theme: 'climate', driver: 'climate', priority: { severity: 3, urgency: 3, irreversibility: 4, reach: 2 }, catalogue: [46], drivers: [{ name: 'Warming at high elevation' }, { name: 'Shrinking talus habitat' }], sites: ['A mountain talus slope'] },
+    { id: 'na-cacti', title: 'Desert cacti and the pet trade', theme: 'plants', driver: 'exploitation', priority: { severity: 3, urgency: 3, irreversibility: 4, reach: 2 }, catalogue: [84, 31], drivers: [{ name: 'Illegal collecting for gardens' }, { name: 'Development in the desert' }], sites: ['A Sonoran Desert stand'] },
+    { id: 'na-coast-squeeze', title: 'Squeezed salt marshes', theme: 'ocean', driver: 'land-sea-use', priority: { severity: 3, urgency: 3, irreversibility: 3, reach: 3 }, catalogue: [20, 10], drivers: [{ name: 'Sea walls and development behind the marsh' }, { name: 'Sea-level rise' }], sites: ['An Atlantic salt marsh'] },
+  ],
+};
+
+export default spec;

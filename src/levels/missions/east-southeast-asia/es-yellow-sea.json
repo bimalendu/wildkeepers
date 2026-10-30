@@ -1,0 +1,81 @@
+{
+  "id": "es-yellow-sea",
+  "title": "The Yellow Sea Mudflats",
+  "blurb": "Reclamation is covering the tidal flats where migrating shorebirds refuel. Hold the shoreline and keep the stopover open.",
+  "region": "east-southeast-asia",
+  "theme": "wildlife",
+  "issue": "es-yellow-sea-issue",
+  "catalogue": [
+    9,
+    78
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 216102,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.63,
+  "map": {
+    "base": "wetland",
+    "pressure": [
+      "town",
+      "road"
+    ],
+    "side": "s",
+    "depth": 5,
+    "accent": "lake",
+    "accentAmount": 0.2
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Land reclamation and sea walls",
+      "strength": 5,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        9,
+        10,
+        78
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Ports and industry on the coast",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        9,
+        10,
+        78
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "spoon-billed-sandpiper",
+      "name": "Spoon-billed sandpiper",
+      "habitat": [
+        "wetland"
+      ],
+      "need": 29,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Restore the flats",
+    "defend": "Bird watch",
+    "remove": "Breach a sea wall",
+    "protect": "Wetland reserve",
+    "campaign": "Stop-reclamation campaign"
+  },
+  "realWorld": "Support groups that protect migratory-bird stopovers, join a local bird count, and keep cats indoors and dogs leashed near shorebird beaches."
+}

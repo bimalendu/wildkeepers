@@ -1,0 +1,476 @@
+{
+  "id": "east-southeast-asia",
+  "name": "East & Southeast Asia",
+  "blurb": "Rainforests, the Coral Triangle’s reefs and the Mekong, under pressure from palm oil, fire, dams, plastic and the loss of the mudflats where migrating birds refuel.",
+  "issues": [
+    {
+      "id": "es-borneo-issue",
+      "title": "The Orangutan Forests of Borneo",
+      "theme": "land",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 5,
+        "urgency": 5,
+        "irreversibility": 5,
+        "reach": 5
+      },
+      "catalogue": [
+        1,
+        2
+      ],
+      "drivers": [
+        {
+          "name": "Oil palm plantations",
+          "catalogue": [
+            1
+          ]
+        },
+        {
+          "name": "Pulp, paper and logging roads",
+          "catalogue": [
+            2
+          ]
+        },
+        {
+          "name": "Mining and the roads it brings",
+          "catalogue": [
+            13
+          ]
+        },
+        {
+          "name": "Hunting and conflict in forest that remains",
+          "catalogue": [
+            81
+          ]
+        }
+      ],
+      "sites": [
+        "A peat swamp forest",
+        "An orangutan corridor",
+        "A forest village"
+      ],
+      "fact": {
+        "text": "A 2018 study in Current Biology estimated that Borneo’s orangutan population fell by more than 100,000 between 1999 and 2015, with half the population affected by logging, deforestation or industrial plantations, though most of the loss was in selectively logged and primary forests.",
+        "source": "Voigt et al., Current Biology (2018), “Global Demand for Natural Resources Eliminated More Than 100,000 Bornean Orangutans”",
+        "url": "https://doi.org/10.1016/j.cub.2018.01.053",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Choose products with credible certified-sustainable palm oil and paper, check labels for deforestation-free claims, and support orangutan and forest-protection groups.",
+      "mission": "es-borneo"
+    },
+    {
+      "id": "es-peat-fires-issue",
+      "title": "Peat Fires and Haze",
+      "theme": "climate",
+      "tier": 1,
+      "driver": "climate",
+      "priority": {
+        "severity": 4,
+        "urgency": 5,
+        "irreversibility": 4,
+        "reach": 4
+      },
+      "catalogue": [
+        44,
+        59
+      ],
+      "drivers": [
+        {
+          "name": "Fires set to clear land",
+          "catalogue": [
+            44
+          ]
+        },
+        {
+          "name": "Drained peat that burns easily",
+          "catalogue": [
+            44
+          ]
+        },
+        {
+          "name": "Smoke and haze across borders",
+          "catalogue": [
+            59
+          ]
+        }
+      ],
+      "sites": [
+        "A drained peat swamp",
+        "A tiger refuge",
+        "A village under the haze"
+      ],
+      "fact": {
+        "text": "The World Bank estimated that Indonesia’s 2015 fires cost at least US$16.1 billion (221 trillion rupiah), equivalent to 1.9% of 2015 GDP and more than twice the reconstruction cost after the Aceh tsunami.",
+        "source": "World Bank, The Cost of Fire: An Economic Analysis of Indonesia’s 2015 Fire Crisis (February 2016)",
+        "url": "https://documents1.worldbank.org/curated/en/776101467990969768/pdf/103668-BRI-Cost-of-Fires-Knowledge-Note-PUBLIC-ADD-NEW-SERIES-Indonesia-Sustainable-Landscapes-Knowledge-Note.pdf",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Choose products with deforestation-free and no-burning palm oil and paper supply chains, and support groups that rewet and restore drained peatland.",
+      "mission": "es-peat-fires"
+    },
+    {
+      "id": "es-coral-triangle-issue",
+      "title": "The Coral Triangle",
+      "theme": "ocean",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 5,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 5
+      },
+      "catalogue": [
+        8,
+        23
+      ],
+      "drivers": [
+        {
+          "name": "Blast and cyanide fishing",
+          "catalogue": [
+            8
+          ]
+        },
+        {
+          "name": "Overfishing",
+          "catalogue": [
+            23
+          ]
+        },
+        {
+          "name": "Coastal development and runoff",
+          "catalogue": [
+            8
+          ]
+        }
+      ],
+      "sites": [
+        "A coral reef nursery",
+        "A whale shark feeding ground",
+        "A fishing village"
+      ],
+      "fact": {
+        "text": "A 2012 World Resources Institute report found that more than 85% of reefs in the Coral Triangle are directly threatened by local human activities, against a global average of 60%, with overfishing, watershed pollution and coastal development the greatest threats.",
+        "source": "World Resources Institute, Reefs at Risk Revisited in the Coral Triangle (2012)",
+        "url": "https://www.wri.org/news/release-85-percent-reefs-coral-triangle-are-threatened-new-report-finds",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Choose reef-friendly seafood, never buy corals or reef souvenirs, and ask dive operators about their reef-protection rules.",
+      "mission": "es-coral-triangle"
+    },
+    {
+      "id": "es-mekong-issue",
+      "title": "The Mighty Mekong’s Fish",
+      "theme": "freshwater",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 4
+      },
+      "catalogue": [
+        12,
+        76
+      ],
+      "drivers": [
+        {
+          "name": "Hydropower dams on the river and its tributaries",
+          "catalogue": [
+            12
+          ]
+        },
+        {
+          "name": "Blocked migration of fish",
+          "catalogue": [
+            76
+          ]
+        },
+        {
+          "name": "Sand mining in the riverbed",
+          "catalogue": [
+            16
+          ]
+        }
+      ],
+      "sites": [
+        "A fish spawning pool",
+        "The Tonle Sap floodplain",
+        "A delta village"
+      ],
+      "fact": {
+        "text": "The Mekong River Commission’s Council Study modelled that, in its final-phase scenario, sediment trapping by mainstream and tributary dams could cut the sediment reaching the Mekong Delta by 97%, with substantial erosion and changes to the river channel.",
+        "source": "Mekong River Commission, MRC Hydropower Mitigation Guidelines (citing the Council Study modelling)",
+        "url": "https://www.mrcmekong.org/wp-content/uploads/2024/08/Ish0306-vol3-1.pdf",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Ask where freshwater fish and rice you buy come from, support river-basin conservation groups, and push banks and companies to publish the effects of dams they fund.",
+      "mission": "es-mekong"
+    },
+    {
+      "id": "es-plastics-issue",
+      "title": "Plastic in the Rivers",
+      "theme": "pollution",
+      "tier": 1,
+      "driver": "pollution",
+      "priority": {
+        "severity": 3,
+        "urgency": 4,
+        "irreversibility": 3,
+        "reach": 5
+      },
+      "catalogue": [
+        49
+      ],
+      "drivers": [
+        {
+          "name": "Poorly collected plastic waste",
+          "catalogue": [
+            49
+          ]
+        },
+        {
+          "name": "Drains and canals that carry it to rivers",
+          "catalogue": [
+            49
+          ]
+        },
+        {
+          "name": "Throwaway packaging",
+          "catalogue": [
+            86
+          ]
+        }
+      ],
+      "sites": [
+        "A small urban river",
+        "A river mouth",
+        "A dolphin habitat"
+      ],
+      "fact": {
+        "text": "A 2021 study in Science Advances estimated that more than 1,000 rivers account for 80% of global annual river plastic emissions into the ocean, with small urban rivers among the most polluting.",
+        "source": "Meijer et al., Science Advances (2021)",
+        "url": "https://research.tudelft.nl/en/publications/more-than-1000-rivers-account-for-80-of-global-riverine-plastic-e/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Cut single-use plastic where you can, use proper bins and recycling, and support river clean-ups and waste-collection schemes in cities.",
+      "mission": "es-plastics"
+    },
+    {
+      "id": "es-yellow-sea-issue",
+      "title": "The Yellow Sea Mudflats",
+      "theme": "wildlife",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 4,
+        "urgency": 3,
+        "irreversibility": 5,
+        "reach": 4
+      },
+      "catalogue": [
+        9,
+        78
+      ],
+      "drivers": [
+        {
+          "name": "Land reclamation",
+          "catalogue": [
+            9
+          ]
+        },
+        {
+          "name": "Ports and industrial coast",
+          "catalogue": [
+            10
+          ]
+        },
+        {
+          "name": "Loss of linked stopover sites along the flyway",
+          "catalogue": [
+            78
+          ]
+        }
+      ],
+      "sites": [
+        "A tidal mudflat",
+        "A shorebird roost",
+        "A coastal wetland reserve"
+      ],
+      "fact": {
+        "text": "A 2014 study in Frontiers in Ecology and the Environment found that 28% of the Yellow Sea’s tidal flats present in the 1980s had disappeared by the late 2000s, and that historical maps suggest up to 65% were lost over the past five decades, mainly to land reclamation.",
+        "source": "Murray et al., Frontiers in Ecology and the Environment 12(5), 267–272 (2014), “Tracking the rapid loss of tidal wetlands in the Yellow Sea”",
+        "url": "https://researchonline.jcu.edu.au/60169/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Support groups that protect migratory-bird stopovers, join a local bird count, and keep cats indoors and dogs leashed near shorebird beaches.",
+      "mission": "es-yellow-sea"
+    },
+    {
+      "id": "es-agarwood-issue",
+      "title": "The Wood of the Gods",
+      "theme": "plants",
+      "tier": 1,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 3,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 2
+      },
+      "catalogue": [
+        32,
+        31
+      ],
+      "drivers": [
+        {
+          "name": "Poaching of wild trees",
+          "catalogue": [
+            32
+          ]
+        },
+        {
+          "name": "Demand for incense, perfume and carvings",
+          "catalogue": [
+            31
+          ]
+        },
+        {
+          "name": "Weak enforcement of trade rules",
+          "catalogue": [
+            88
+          ]
+        }
+      ],
+      "sites": [
+        "A lowland forest",
+        "A plantation nursery",
+        "A poaching hotspot"
+      ],
+      "fact": {
+        "text": "A 2025 study of CITES and customs records for 2010–2020 found that the global agarwood trade depends heavily on wild-harvested, threatened trees, despite CITES protection.",
+        "source": "Mongabay (April 2025), reporting a global agarwood-trade study",
+        "url": "https://news.mongabay.com/2025/04/global-agarwood-trade-heavily-dependent-on-wild-threatened-trees-study/",
+        "also": [
+          {
+            "source": "Kadoorie Farm and Botanic Garden (2025), on its agarwood-trade study",
+            "url": "https://kfbg.org/en/KFBG-blog/post/KFBG-Scientists-Reveal-Urgent-Strategies-to-Combat-Agarwood-Trade-Threats-and-Protect-Endangered-Species"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Avoid wild-harvested agarwood incense, perfume and carvings, check that any agarwood product is from a certified plantation, and report illegal sales.",
+      "mission": "es-agarwood"
+    },
+    {
+      "id": "es-songbirds",
+      "title": "Songbirds in cages",
+      "theme": "wildlife",
+      "tier": 2,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        31
+      ],
+      "drivers": [
+        {
+          "name": "Demand for pet songbirds"
+        },
+        {
+          "name": "Contests and online trade"
+        }
+      ],
+      "sites": [
+        "A forest where songbirds are trapped"
+      ]
+    },
+    {
+      "id": "es-sand",
+      "title": "Sand mining in the Mekong",
+      "theme": "freshwater",
+      "tier": 2,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 3,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        16
+      ],
+      "drivers": [
+        {
+          "name": "Sand for construction"
+        },
+        {
+          "name": "Riverbank collapse"
+        }
+      ],
+      "sites": [
+        "A river sand pit"
+      ]
+    },
+    {
+      "id": "es-seagrass",
+      "title": "Seagrass and the dugong",
+      "theme": "ocean",
+      "tier": 2,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        6
+      ],
+      "drivers": [
+        {
+          "name": "Coastal development"
+        },
+        {
+          "name": "Trawling and anchors"
+        }
+      ],
+      "sites": [
+        "A seagrass meadow"
+      ]
+    },
+    {
+      "id": "es-typhoons",
+      "title": "Typhoons and coastal wetlands",
+      "theme": "climate",
+      "tier": 2,
+      "driver": "climate",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 3,
+        "reach": 3
+      },
+      "catalogue": [
+        43
+      ],
+      "drivers": [
+        {
+          "name": "Stronger storms and rising seas"
+        },
+        {
+          "name": "Lost mangrove buffers"
+        }
+      ],
+      "sites": [
+        "A coastal mangrove belt"
+      ]
+    }
+  ]
+}

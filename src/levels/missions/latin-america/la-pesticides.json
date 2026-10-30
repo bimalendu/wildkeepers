@@ -1,0 +1,105 @@
+{
+  "id": "la-pesticides",
+  "title": "Runoff in the Soy Belt",
+  "blurb": "Pesticides from farm fields end up in the rivers of the soy belt. Test, ban and clean.",
+  "region": "latin-america",
+  "theme": "pollution",
+  "issue": "la-pesticides-issue",
+  "catalogue": [
+    52,
+    51,
+    74
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 205119,
+  "turns": 14,
+  "energy": 4,
+  "floor": 0.66,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Accumulating pesticides",
+      "strength": 5,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        52,
+        18,
+        51,
+        74
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Field runoff into rivers",
+      "strength": 2,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        52,
+        18,
+        51,
+        74
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "jabiru",
+      "name": "Jabiru stork",
+      "habitat": [
+        "wetland",
+        "river"
+      ],
+      "need": 25,
+      "homes": 2
+    },
+    {
+      "id": "capybara",
+      "name": "Capybara",
+      "habitat": [
+        "wetland",
+        "forest"
+      ],
+      "need": 28,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Booms",
+    "remove": "Clean up",
+    "protect": "Buffer strip",
+    "campaign": "Ban the pesticide"
+  },
+  "realWorld": "Buy organic or agroecological produce where you can, avoid garden pesticides, and ask suppliers to cut pesticide use."
+}

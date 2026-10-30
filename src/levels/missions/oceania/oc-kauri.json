@@ -1,0 +1,82 @@
+{
+  "id": "oc-kauri",
+  "title": "Kauri Dieback",
+  "blurb": "A soil-borne disease is killing New Zealand’s giant kauri trees, and it spreads on boots, gear and vehicles. Stop the spread and protect the roots.",
+  "region": "oceania",
+  "theme": "plants",
+  "issue": "oc-kauri-issue",
+  "catalogue": [
+    67
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 210068,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.7,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.15,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "disease",
+      "kind": "disease",
+      "behaviour": "hunt",
+      "label": "Kauri dieback (Phytophthora)",
+      "strength": 2,
+      "every": 2,
+      "hurts": [
+        "kauri"
+      ],
+      "from": "species",
+      "sources": 4,
+      "catalogue": [
+        67,
+        1
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Clearing and track damage",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        67,
+        1
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "kauri",
+      "name": "Kauri",
+      "habitat": [
+        "forest"
+      ],
+      "need": 29,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Cleaning station",
+    "remove": "Contain infected soil",
+    "protect": "Closed forest",
+    "campaign": "Biosecurity campaign"
+  },
+  "realWorld": "Clean your boots and gear at wash stations, stay on the tracks and obey closures in kauri forest, and report sick kauri to the Department of Conservation or Tiakina Kauri."
+}

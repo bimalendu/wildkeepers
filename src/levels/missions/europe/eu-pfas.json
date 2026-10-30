@@ -1,0 +1,87 @@
+{
+  "id": "eu-pfas",
+  "title": "Forever Chemicals",
+  "blurb": "PFAS “forever chemicals” have contaminated thousands of sites across Europe, from industrial sites to firefighting foam. Clean up, cap the sources and push for a ban.",
+  "region": "europe",
+  "theme": "pollution",
+  "issue": "eu-pfas-issue",
+  "catalogue": [
+    54
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 218034,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.71,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "PFAS leaking from factories and foam",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        54
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Contaminated sites seeping into rivers",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        54
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "eurasian-otter",
+      "name": "Eurasian otter",
+      "habitat": [
+        "wetland",
+        "river"
+      ],
+      "need": 27,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Containment barrier",
+    "remove": "Clean up a site",
+    "protect": "Clean-water zone",
+    "campaign": "PFAS-ban campaign"
+  },
+  "realWorld": "Choose PFAS-free products where labels say so, avoid non-stick and water-repellent products you do not need, and ask your local water supplier to publish PFAS test results."
+}

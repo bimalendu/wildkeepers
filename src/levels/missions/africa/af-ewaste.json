@@ -1,0 +1,90 @@
+{
+  "id": "af-ewaste",
+  "title": "Burning E-Waste",
+  "blurb": "Old phones and computers are often burned in the open to recover their metals, releasing toxic fumes. Clean up and shut the supply down.",
+  "region": "africa",
+  "theme": "pollution",
+  "issue": "af-ewaste-issue",
+  "catalogue": [
+    57,
+    59
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 199085,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.65,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Toxic ash and soot from burning e-waste",
+      "strength": 5,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        57,
+        59
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Metals washing into the lagoon",
+      "strength": 2,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        57,
+        59
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "african-fish-eagle",
+      "name": "African fish eagle",
+      "habitat": [
+        "wetland",
+        "river"
+      ],
+      "need": 22,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Safe collection point",
+    "remove": "Clean up ash",
+    "protect": "Buffer zone",
+    "campaign": "Repair-and-recycle campaign"
+  },
+  "realWorld": "Keep devices for longer, repair rather than replace, and give old electronics only to certified take-back or recycling schemes, never to an unlicensed collector."
+}

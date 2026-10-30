@@ -1,0 +1,72 @@
+{
+  "id": "ph-arctic-plastics",
+  "title": "Plastic at the Pole",
+  "blurb": "Plastic is turning up in Arctic snow, sea ice, seawater and seabed sediments, and whales, fish and birds can ingest it. Cut the flow at its source and clean the ice-edge waters.",
+  "region": "polar-high-seas",
+  "theme": "pollution",
+  "issue": "ph-arctic-plastics-issue",
+  "catalogue": [
+    49,
+    54
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 216119,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.7,
+  "map": {
+    "base": "ocean",
+    "accent": "ice",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Drifting plastic and microplastic",
+      "strength": 4,
+      "from": "edge",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "ocean",
+        "reef",
+        "seagrass",
+        "kelp"
+      ],
+      "catalogue": [
+        49,
+        54
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "fulmar",
+      "name": "Northern fulmar",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 25,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Restore clean water",
+    "defend": "Beach cleanup watch",
+    "remove": "Haul out debris",
+    "protect": "Arctic marine reserve",
+    "campaign": "Plastics-treaty campaign"
+  },
+  "realWorld": "Use less single-use plastic, support a strong global plastics treaty, and take part in shoreline cleanups."
+}

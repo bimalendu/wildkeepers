@@ -1,0 +1,76 @@
+{
+  "id": "sa-sundarbans",
+  "title": "The Sinking Mangroves",
+  "blurb": "Rising seas threaten the world’s largest mangrove forest, the home of the Bengal tiger. Hold the line.",
+  "region": "south-asia",
+  "theme": "ocean",
+  "issue": "sa-sundarbans-issue",
+  "catalogue": [
+    5,
+    43
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 212051,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.55,
+  "map": {
+    "base": "mangrove",
+    "pressure": [
+      "farm"
+    ],
+    "side": "s",
+    "depth": 6,
+    "accent": "river",
+    "accentAmount": 0.2
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Shrimp farms and embankments",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        43
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Rising seas and saltwater",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        43
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "bengal-tiger",
+      "name": "Bengal tiger",
+      "habitat": [
+        "mangrove"
+      ],
+      "need": 20,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant mangroves",
+    "defend": "Village patrol",
+    "remove": "Break a shrimp-pond dyke",
+    "protect": "Protected mangrove",
+    "campaign": "Sustainable-aquaculture campaign"
+  },
+  "realWorld": "Ask where prawns and shrimp come from and prefer mangrove-friendly certified or locally farmed seafood, and support mangrove-planting and community-protection groups."
+}

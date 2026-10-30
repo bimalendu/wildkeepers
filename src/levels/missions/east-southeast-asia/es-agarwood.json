@@ -1,0 +1,81 @@
+{
+  "id": "es-agarwood",
+  "title": "The Wood of the Gods",
+  "blurb": "Illegal harvesters cut wild agarwood trees for their fragrant resin. Guard the forest and break the trade.",
+  "region": "east-southeast-asia",
+  "theme": "plants",
+  "issue": "es-agarwood-issue",
+  "catalogue": [
+    32,
+    31
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 216119,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.66,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "road",
+      "farm"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Illegal agarwood poachers",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "agarwood-tree"
+      ],
+      "catalogue": [
+        32,
+        31,
+        88
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Forest clearing at the edge",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        32,
+        31,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "agarwood-tree",
+      "name": "Agarwood tree (Aquilaria)",
+      "habitat": [
+        "forest"
+      ],
+      "need": 39,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Forest ranger",
+    "remove": "Block a poachers’ track",
+    "protect": "Protected forest",
+    "campaign": "Wildlife-trade campaign"
+  },
+  "realWorld": "Avoid wild-harvested agarwood incense, perfume and carvings, check that any agarwood product is from a certified plantation, and report illegal sales."
+}

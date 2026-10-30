@@ -1,0 +1,73 @@
+{
+  "id": "af-lake-chad",
+  "title": "Lake Chad Is Drying",
+  "blurb": "Drought and rising demand for water have shrunk Lake Chad. Cut the draw-down and bring the wetlands back.",
+  "region": "africa",
+  "theme": "freshwater",
+  "issue": "af-lake-chad-issue",
+  "catalogue": [
+    35,
+    63
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 199068,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.72,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town",
+      "mine"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Irrigation draw-down",
+      "strength": 4,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        35,
+        45
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "african-manatee",
+      "name": "African manatee",
+      "habitat": [
+        "river",
+        "wetland"
+      ],
+      "need": 31,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Water-sharing deal",
+    "remove": "Close an illegal intake",
+    "protect": "Wetland reserve",
+    "campaign": "Water-management campaign"
+  },
+  "realWorld": "Support water-sharing and wetland-restoration programmes through reputable charities, and cut your own water footprint where you can."
+}

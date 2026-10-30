@@ -1,0 +1,31 @@
+{
+  "name": "wildkeepers",
+  "version": "0.1.0",
+  "description": "Wildkeepers - a turn-based ecosystem activism strategy game (Phaser 3, mobile-first PWA)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "icons": "node scripts/make-icons.mjs",
+    "test:e2e": "playwright test",
+    "bot": "tsx scripts/bot-balance.ts"
+  },
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.2.0",
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.5"
+  },
+  "private": true
+}

@@ -1,0 +1,56 @@
+{
+  "id": "gf-ozone",
+  "title": "The Ozone Success Story",
+  "blurb": "A hope mission. In 1987 the world agreed to cut the chemicals that were thinning the ozone layer, with the aim of eliminating them. Close the last routes and see what a treaty that works looks like.",
+  "region": "global-fronts",
+  "theme": "pollution",
+  "issue": "gf-ozone-issue",
+  "catalogue": [],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 205119,
+  "turns": 8,
+  "energy": 4,
+  "floor": 0.83,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [],
+    "river": false
+  },
+  "threats": [
+    {
+      "id": "network",
+      "kind": "network",
+      "behaviour": "spread",
+      "label": "Ozone-destroying chemicals",
+      "strength": 2,
+      "from": "random",
+      "sources": 2,
+      "catalogue": []
+    }
+  ],
+  "species": [
+    {
+      "id": "common-frog",
+      "name": "Common frog",
+      "habitat": [
+        "wetland"
+      ],
+      "need": 42,
+      "homes": 2
+    }
+  ],
+  "hope": true,
+  "labels": {
+    "restore": "Restore habitat",
+    "defend": "Customs checks",
+    "remove": "Phase out a chemical",
+    "protect": "Protected area",
+    "campaign": "Montreal Protocol"
+  },
+  "realWorld": "Have old fridges, freezers and air-conditioners disposed of through a recycler that recovers their refrigerant, so the gases are not vented."
+}

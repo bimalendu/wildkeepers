@@ -1,0 +1,84 @@
+{
+  "id": "na-right-whale",
+  "title": "Right Whales and Ropes",
+  "blurb": "Ships and fishing gear are the two leading causes of death for the North Atlantic right whale, of which about 380 were alive at the start of 2024. Slow the ships, clear the gear and protect the nursery waters.",
+  "region": "north-america",
+  "theme": "wildlife",
+  "issue": "na-right-whale-issue",
+  "catalogue": [
+    80,
+    61
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 207102,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.77,
+  "map": {
+    "base": "ocean",
+    "accent": "kelp",
+    "accentAmount": 0.15,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Ship strikes on shipping lanes",
+      "strength": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "right-whale"
+      ],
+      "catalogue": [
+        80,
+        61
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Entangling fishing gear",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "right-whale"
+      ],
+      "catalogue": [
+        80,
+        61
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "right-whale",
+      "name": "North Atlantic right whale",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 30,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rebuild feeding grounds",
+    "defend": "Slow zone",
+    "remove": "Retrieve lost gear",
+    "protect": "Seasonal whale sanctuary",
+    "campaign": "Rope and speed-rule campaign"
+  },
+  "realWorld": "Choose seafood from fisheries using whale-safe, ropeless or weak-rope gear, keep to speed limits when boating in slow zones, and report whale sightings."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "sa-glaciers",
+  "title": "Himalayan Water Towers",
+  "blurb": "Melting glaciers send more water down the valleys, then less. Protect the rivers and the fish and people who depend on them.",
+  "region": "south-asia",
+  "theme": "climate",
+  "issue": "sa-glaciers-issue",
+  "catalogue": [
+    41
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 212068,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.67,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town",
+      "mine"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Meltwater surges and glacial-lake floods",
+      "strength": 4,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        41
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "golden-mahseer",
+      "name": "Golden mahseer",
+      "habitat": [
+        "river",
+        "lake"
+      ],
+      "need": 3,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Flood barrier",
+    "remove": "Clear debris",
+    "protect": "River reserve",
+    "campaign": "Climate-action campaign"
+  },
+  "realWorld": "Cut your own emissions where you can, and support early-warning systems and community adaptation work in mountain valleys."
+}

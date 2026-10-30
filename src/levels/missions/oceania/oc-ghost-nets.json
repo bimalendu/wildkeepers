@@ -1,0 +1,71 @@
+{
+  "id": "oc-ghost-nets",
+  "title": "Ghost Nets of the Gulf",
+  "blurb": "Ghost nets drift into northern Australia’s seas and threaten turtles and dugongs. Cut them free and haul them in, with the Indigenous rangers who know the coast.",
+  "region": "oceania",
+  "theme": "pollution",
+  "issue": "oc-ghost-nets-issue",
+  "catalogue": [
+    50
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 210034,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.76,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "river": false,
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Drifting ghost nets",
+      "strength": 4,
+      "from": "edge",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "ocean",
+        "reef",
+        "seagrass",
+        "kelp"
+      ],
+      "catalogue": [
+        50,
+        24
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "olive-ridley",
+      "name": "Olive ridley turtle",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 33,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Regrow the seabed",
+    "defend": "Net watch",
+    "remove": "Cut free and haul in",
+    "protect": "Sea-country reserve",
+    "campaign": "Fishing-gear campaign"
+  },
+  "realWorld": "Dispose of fishing line and gear properly, choose seafood from fisheries that mark and recover their gear, and support Indigenous ranger ghost-net programmes."
+}

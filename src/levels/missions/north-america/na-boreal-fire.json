@@ -1,0 +1,103 @@
+{
+  "id": "na-boreal-fire",
+  "title": "The Boreal Fire Season",
+  "blurb": "The 2023 fire season burned more than 14 million hectares of Canada’s forest. Cut firebreaks, put out the fire and protect unburnt refuges.",
+  "region": "north-america",
+  "theme": "climate",
+  "issue": "na-boreal-fire-issue",
+  "catalogue": [
+    44,
+    45
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 207034,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.58,
+  "map": {
+    "base": "forest",
+    "accent": "wetland",
+    "accentAmount": 0.2,
+    "pressure": [
+      "road",
+      "town"
+    ],
+    "side": "w",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "fire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Boreal wildfire",
+      "strength": 4,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random",
+      "catalogue": [
+        45,
+        44
+      ]
+    },
+    {
+      "id": "conversion",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Clearing and roads at the forest edge",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        45,
+        44
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "lynx",
+      "name": "Canada lynx",
+      "habitat": [
+        "forest"
+      ],
+      "need": 22,
+      "homes": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "dry1",
+      "turn": 3,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dry2",
+      "turn": 7,
+      "title": "Heat wave",
+      "text": "Record temperatures dry out the vegetation again. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Fire guard",
+    "remove": "Put out fire",
+    "protect": "Unburnt refuge",
+    "campaign": "Climate and fire campaign"
+  },
+  "realWorld": "Follow fire bans and smoke advisories, prepare your own evacuation plan if you live near forest, and support groups that restore burned habitat."
+}

@@ -1,0 +1,82 @@
+{
+  "id": "eu-ash",
+  "title": "Ash Dieback",
+  "blurb": "A fungus is killing ash trees across Europe. Slow its spread, shelter the survivors and protect the woods that depend on them.",
+  "region": "europe",
+  "theme": "plants",
+  "issue": "eu-ash-issue",
+  "catalogue": [
+    67
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 218051,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.69,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.15,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "disease",
+      "kind": "disease",
+      "behaviour": "hunt",
+      "label": "Ash dieback fungus",
+      "strength": 2,
+      "every": 2,
+      "hurts": [
+        "european-ash"
+      ],
+      "from": "species",
+      "sources": 4,
+      "catalogue": [
+        67,
+        1
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Clearing and felling of woodland",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        67,
+        1
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "european-ash",
+      "name": "European ash",
+      "habitat": [
+        "forest"
+      ],
+      "need": 34,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant with diverse trees",
+    "defend": "Woodland guard",
+    "remove": "Fell a diseased tree safely",
+    "protect": "Resistant-tree reserve",
+    "campaign": "Plant-health rules campaign"
+  },
+  "realWorld": "Buy plants and trees only from nurseries that follow plant-health rules, never bring plants or soil back from trips abroad, and report diseased ash trees to your national forestry body."
+}

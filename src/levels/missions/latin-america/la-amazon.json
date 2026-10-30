@@ -1,0 +1,82 @@
+{
+  "id": "la-amazon",
+  "title": "The Arc of Deforestation",
+  "blurb": "Cattle pasture and cropland push into the Amazon. Protect Indigenous land and the forest the jaguar needs.",
+  "region": "latin-america",
+  "theme": "land",
+  "issue": "la-amazon-issue",
+  "catalogue": [
+    1,
+    2,
+    90
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 205017,
+  "turns": 14,
+  "energy": 4,
+  "floor": 0.56,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Pasture and soy frontier",
+      "strength": 4,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        1,
+        2,
+        11,
+        44
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Logging roads open new access",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        1,
+        2,
+        11,
+        44
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "jaguar",
+      "name": "Jaguar",
+      "habitat": [
+        "forest"
+      ],
+      "need": 26,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Patrol",
+    "remove": "Clear the road",
+    "protect": "Land title",
+    "campaign": "Supply-chain campaign"
+  },
+  "realWorld": "Look for credible deforestation-free labels (such as FSC on wood and paper), and ask retailers and banks where their beef, soy and palm oil come from."
+}

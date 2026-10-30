@@ -1,0 +1,105 @@
+{
+  "id": "la-pantanal",
+  "title": "Pantanal on Fire",
+  "blurb": "The world’s largest tropical freshwater wetland dries and burns. Cut firebreaks and protect the macaws and marshes.",
+  "region": "latin-america",
+  "theme": "climate",
+  "issue": "la-pantanal-issue",
+  "catalogue": [
+    44,
+    45,
+    4
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 205051,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.59,
+  "map": {
+    "base": "grass",
+    "accent": "wetland",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "w",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "fire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Wildfire",
+      "strength": 4,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random",
+      "catalogue": [
+        45,
+        44
+      ]
+    },
+    {
+      "id": "conversion",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Clearing for cattle pasture",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        45,
+        44
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "macaw",
+      "name": "Hyacinth macaw",
+      "habitat": [
+        "wetland",
+        "grass"
+      ],
+      "need": 31,
+      "homes": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "dry1",
+      "turn": 3,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dry2",
+      "turn": 7,
+      "title": "Heat wave",
+      "text": "Record temperatures dry out the vegetation again. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Firebreak",
+    "remove": "Put out fire",
+    "protect": "Protected area",
+    "campaign": "Fire-safety campaign"
+  },
+  "realWorld": "Follow local fire bans, never burn rubbish in dry weather, and support wetland restoration groups and firefighting volunteers."
+}

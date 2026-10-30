@@ -1,0 +1,82 @@
+{
+  "id": "la-parana-pine",
+  "title": "The Last Araucaria Forests",
+  "blurb": "Logging and conversion have taken almost all of the Paraná pine forest. Guard what remains.",
+  "region": "latin-america",
+  "theme": "plants",
+  "issue": "la-parana-pine-issue",
+  "catalogue": [
+    2,
+    1,
+    85
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 205068,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.65,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "road",
+      "farm"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Illegal logging of old araucaria",
+      "strength": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "parana-pine"
+      ],
+      "catalogue": [
+        2,
+        1,
+        21
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Conversion to farms and plantations",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        2,
+        1,
+        21
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "parana-pine",
+      "name": "Paraná pine",
+      "habitat": [
+        "forest"
+      ],
+      "need": 36,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Patrol",
+    "remove": "Block the road",
+    "protect": "Community forest",
+    "campaign": "Timber-certification campaign"
+  },
+  "realWorld": "Buy only certified timber, and never buy araucaria or other native hardwoods without proof of legal origin."
+}

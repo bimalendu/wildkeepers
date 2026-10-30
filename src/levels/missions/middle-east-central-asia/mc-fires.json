@@ -1,0 +1,103 @@
+{
+  "id": "mc-fires",
+  "title": "Fire Season in the Pine Forests",
+  "blurb": "Hot, dry summers turn coastal pine forests into fuel. Cut firebreaks, put out the flames and protect what survives.",
+  "region": "middle-east-central-asia",
+  "theme": "climate",
+  "issue": "mc-fires-issue",
+  "catalogue": [
+    44,
+    45
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 208102,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.65,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm",
+      "town"
+    ],
+    "side": "s",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "fire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Wildfire",
+      "strength": 4,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random",
+      "catalogue": [
+        45,
+        44
+      ]
+    },
+    {
+      "id": "conversion",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Clearing at the forest edge",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        45,
+        44
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "eurasian-lynx",
+      "name": "Eurasian lynx",
+      "habitat": [
+        "forest"
+      ],
+      "need": 17,
+      "homes": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "dry1",
+      "turn": 3,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dry2",
+      "turn": 7,
+      "title": "Heat wave",
+      "text": "Record temperatures dry out the vegetation again. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Firebreak",
+    "remove": "Put out fire",
+    "protect": "Fire-safe forest",
+    "campaign": "Fire-safety campaign"
+  },
+  "realWorld": "Follow local fire-danger rules and never light fires or throw cigarettes in dry woodland, and support or volunteer with local fire-prevention and reforestation groups."
+}

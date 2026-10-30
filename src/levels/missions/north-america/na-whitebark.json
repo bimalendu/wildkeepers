@@ -1,0 +1,80 @@
+{
+  "id": "na-whitebark",
+  "title": "The Whitebark Pine",
+  "blurb": "A non-native fungus is killing whitebark pines across the West’s high-elevation forests. Contain the rust and plant the resistant trees.",
+  "region": "north-america",
+  "theme": "plants",
+  "issue": "na-whitebark-issue",
+  "catalogue": [
+    67
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 207068,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.71,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.2,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "disease",
+      "kind": "disease",
+      "behaviour": "hunt",
+      "label": "White pine blister rust",
+      "strength": 2,
+      "every": 2,
+      "hurts": [
+        "whitebark"
+      ],
+      "from": "species",
+      "sources": 4,
+      "catalogue": [
+        67
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Beetles and clearing at the forest edge",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        67
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "whitebark",
+      "name": "Whitebark pine",
+      "habitat": [
+        "forest"
+      ],
+      "need": 28,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Plant resistant seedlings",
+    "defend": "Protect a seed tree",
+    "remove": "Prune infected trees",
+    "protect": "Seed-source reserve",
+    "campaign": "Research and listing campaign"
+  },
+  "realWorld": "Stay on trails and report dead or dying high-elevation pines to the land agency, and support groups that collect seed from rust-resistant trees."
+}

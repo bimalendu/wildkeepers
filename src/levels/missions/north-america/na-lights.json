@@ -1,0 +1,78 @@
+{
+  "id": "na-lights",
+  "title": "Lights Out for Migrants",
+  "blurb": "Night-flying songbirds are drawn to city lights and get disoriented. Dim the towers, keep dark stopovers and win a bird-safe building law.",
+  "region": "north-america",
+  "theme": "pollution",
+  "issue": "na-lights-issue",
+  "catalogue": [
+    60,
+    78
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 207051,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.63,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 5,
+    "accent": "wetland",
+    "accentAmount": 0.25
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Skyglow spreading from the city",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        60,
+        78
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "New lit towers and glass",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        60,
+        78
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "wood-thrush",
+      "name": "Wood thrush",
+      "habitat": [
+        "forest"
+      ],
+      "need": 29,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant a stopover",
+    "defend": "Lights out tonight",
+    "remove": "Switch off a tower’s lights",
+    "protect": "Dark-sky stopover reserve",
+    "campaign": "Bird-safe building campaign"
+  },
+  "realWorld": "Turn off or shield outdoor lights at night in spring and autumn, close blinds in tall buildings, and ask building owners to join a Lights Out programme."
+}

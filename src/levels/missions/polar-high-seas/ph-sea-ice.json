@@ -1,0 +1,85 @@
+{
+  "id": "ph-sea-ice",
+  "title": "The Emperor Penguins’ Ice",
+  "blurb": "Emperor penguins breed on sea ice that must last until their chicks grow waterproof feathers. Slow the melt, protect the stable ice and win the climate case.",
+  "region": "polar-high-seas",
+  "theme": "climate",
+  "issue": "ph-sea-ice-issue",
+  "catalogue": [
+    40
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 216085,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.53,
+  "map": {
+    "base": "ice",
+    "pressure": [
+      "ocean"
+    ],
+    "side": "s",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "thaw",
+      "kind": "thaw",
+      "behaviour": "spread",
+      "label": "Early sea-ice breakup",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "targets": [
+        "ice",
+        "tundra",
+        "wetland"
+      ],
+      "catalogue": [
+        36,
+        40
+      ]
+    },
+    {
+      "id": "pulse",
+      "kind": "thaw",
+      "behaviour": "spread",
+      "label": "Warm storms and open water",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "ice",
+        "tundra",
+        "wetland"
+      ],
+      "catalogue": [
+        36,
+        40
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "emperor",
+      "name": "Emperor penguin",
+      "habitat": [
+        "ice"
+      ],
+      "need": 29,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Recover stable ice",
+    "defend": "Protect a colony site",
+    "remove": "Clear a polynya",
+    "protect": "Colony reserve",
+    "campaign": "Emissions campaign"
+  },
+  "realWorld": "Cutting your own carbon emissions and backing policies that cut them is the main lever; you can also support colony monitoring projects that track penguins from satellites."
+}

@@ -1,0 +1,79 @@
+{
+  "id": "sa-sanders",
+  "title": "Red Gold Smugglers",
+  "blurb": "Illegal loggers fell red sanders, a tree found only in India’s Eastern Ghats, for a global market. Guard the hills and break the trade.",
+  "region": "south-asia",
+  "theme": "plants",
+  "issue": "sa-sanders-issue",
+  "catalogue": [
+    32,
+    2
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 212102,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.67,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "road",
+      "farm"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Smuggling gangs felling red sanders",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "red-sanders"
+      ],
+      "catalogue": [
+        32,
+        88
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Mining and clearing in the hills",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        32,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "red-sanders",
+      "name": "Red sanders",
+      "habitat": [
+        "forest"
+      ],
+      "need": 38,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Forest guard",
+    "remove": "Block a smuggling track",
+    "protect": "Protected hills",
+    "campaign": "Timber-trade campaign"
+  },
+  "realWorld": "Do not buy red sandalwood products, check that any rare-wood item comes with CITES paperwork, and support anti-trafficking groups such as TRAFFIC."
+}

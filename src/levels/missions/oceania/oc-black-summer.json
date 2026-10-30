@@ -1,0 +1,103 @@
+{
+  "id": "oc-black-summer",
+  "title": "Black Summer Fires",
+  "blurb": "Mega-fires burned whole forests at once in 2019–20, and about 3 billion animals were impacted. Cut firebreaks, put out the fire and protect the unburnt refuges.",
+  "region": "oceania",
+  "theme": "climate",
+  "issue": "oc-black-summer-issue",
+  "catalogue": [
+    44,
+    45
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 210102,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.57,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.2,
+    "pressure": [
+      "farm",
+      "town"
+    ],
+    "side": "e",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "fire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Bushfire",
+      "strength": 4,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random",
+      "catalogue": [
+        45,
+        44
+      ]
+    },
+    {
+      "id": "conversion",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Clearing and fuel build-up at the edge",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        45,
+        44
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "greater-glider",
+      "name": "Greater glider",
+      "habitat": [
+        "forest"
+      ],
+      "need": 22,
+      "homes": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "dry1",
+      "turn": 3,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dry2",
+      "turn": 7,
+      "title": "Heat wave",
+      "text": "Record temperatures dry out the vegetation again. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Fire break",
+    "remove": "Put out fire",
+    "protect": "Unburnt refuge",
+    "campaign": "Climate and fire campaign"
+  },
+  "realWorld": "Follow fire-danger rules, prepare a bushfire plan if you live near bush, and support wildlife rescue and habitat-recovery groups."
+}

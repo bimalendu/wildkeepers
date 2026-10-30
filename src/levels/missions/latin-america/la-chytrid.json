@@ -1,0 +1,97 @@
+{
+  "id": "la-chytrid",
+  "title": "The Frog Fungus",
+  "blurb": "A deadly fungus is wiping out frog populations. Quarantine, build assurance colonies and keep habitat connected.",
+  "region": "latin-america",
+  "theme": "wildlife",
+  "issue": "la-chytrid-issue",
+  "catalogue": [
+    68,
+    75
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 205034,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.68,
+  "map": {
+    "base": "forest",
+    "accent": "wetland",
+    "accentAmount": 0.3,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "disease",
+      "kind": "disease",
+      "behaviour": "hunt",
+      "label": "Chytrid fungus",
+      "strength": 2,
+      "every": 2,
+      "hurts": [
+        "harlequin",
+        "golden-frog"
+      ],
+      "from": "species",
+      "sources": 3,
+      "catalogue": [
+        68,
+        11,
+        46
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Forest clearing fragments habitat",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        68,
+        11,
+        46
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "harlequin",
+      "name": "Harlequin toad",
+      "habitat": [
+        "forest",
+        "river"
+      ],
+      "need": 22,
+      "homes": 2
+    },
+    {
+      "id": "golden-frog",
+      "name": "Golden frog",
+      "habitat": [
+        "forest",
+        "river"
+      ],
+      "need": 22,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Quarantine",
+    "remove": "Contain outbreak",
+    "protect": "Reserve",
+    "campaign": "Rescue colony and research"
+  },
+  "realWorld": "Clean boots, nets and gear between wetlands, never release pet amphibians into the wild, and support amphibian rescue programmes."
+}

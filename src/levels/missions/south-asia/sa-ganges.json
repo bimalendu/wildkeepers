@@ -1,0 +1,72 @@
+{
+  "id": "sa-ganges",
+  "title": "The Ganga’s Sewage",
+  "blurb": "Faecal pollution still breaks bathing limits on stretches of the Ganga. Clean it up and push for treatment that works.",
+  "region": "south-asia",
+  "theme": "freshwater",
+  "issue": "sa-ganges-issue",
+  "catalogue": [
+    58
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 212034,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.7,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town",
+      "mine"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Untreated sewage from town drains",
+      "strength": 4,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        58,
+        51
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "river-dolphin",
+      "name": "Ganges river dolphin",
+      "habitat": [
+        "river",
+        "lake"
+      ],
+      "need": 7,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Intercept a drain",
+    "remove": "Clear sewage",
+    "protect": "Buffer wetland",
+    "campaign": "Sewage-treatment campaign"
+  },
+  "realWorld": "Never pour oil, paint or chemicals down a drain, support river clean-up groups, and ask your local authority how your sewage is treated."
+}

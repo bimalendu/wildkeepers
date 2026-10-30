@@ -1,0 +1,74 @@
+{
+  "id": "mc-aral",
+  "title": "The Vanishing Aral Sea",
+  "blurb": "Rivers diverted to irrigate cotton left a once-great sea a fraction of its size. Win water back for the delta and its river forests.",
+  "region": "middle-east-central-asia",
+  "theme": "freshwater",
+  "issue": "mc-aral-issue",
+  "catalogue": [
+    35,
+    63
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 208017,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.67,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town",
+      "mine"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Irrigation diversions from the rivers",
+      "strength": 3,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        35,
+        63,
+        45
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "bukhara-deer",
+      "name": "Bukhara deer",
+      "habitat": [
+        "forest",
+        "river"
+      ],
+      "need": 11,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Water-sharing deal",
+    "remove": "Close an illegal canal",
+    "protect": "Delta reserve",
+    "campaign": "Efficient-irrigation campaign"
+  },
+  "realWorld": "Check where cotton clothing comes from, prefer products that report water use, and support delta restoration charities."
+}

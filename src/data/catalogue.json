@@ -1,0 +1,1390 @@
+[
+  {
+    "id": 1,
+    "name": "Commodity deforestation (beef, soy, palm oil, cocoa, coffee, rubber, pulp)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · LatAm, Africa, E&SE Asia, Oceania Land",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Illegal logging and timber trafficking",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "L4 in deforestation missions; M · Madagascar rosewood",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Grassland and savanna conversion (Cerrado, prairie, steppe)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · N. America prairie; T2 · LatAm Cerrado",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Wetland drainage and peatland loss",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "freshwater-change",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Mesopotamian Marshes, Europe peatlands",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mangrove loss (shrimp farms, coastal development)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Sundarbans; L4 shrimp aquaculture",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Seagrass meadow loss",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · Oceania, Europe (Mediterranean Posidonia)",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Kelp forest collapse (urchin barrens, heatwaves)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · N. America Pacific",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Coral reef destruction (blast fishing, coastal development)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Coral Triangle, Red Sea",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Intertidal mudflat loss (Yellow Sea flyway)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · E&SE Asia",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Urban sprawl and infrastructure",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · South Asia, N. America; L4 in coastal missions",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Fragmentation by roads, fences and rail; migration barriers",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "L4 everywhere; T2 · Central Asia steppe fences",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Dams and river fragmentation",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "freshwater-change",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Mekong, Europe eel",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Mining (gold, coal, mountaintop removal, tailings dams)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · gold mercury; T2 · Appalachia; L4 tailings failure",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Energy-transition minerals (lithium salt flats, nickel)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · LatAm Andes, E&SE Asia nickel",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Deep-sea mining",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Polar & High Seas",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Sand and gravel mining",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · South Asia, Mekong",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Desertification and land degradation",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Sahel",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Soil erosion and loss of soil health",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Europe farmland",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Overgrazing",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Central Asian steppe",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Coastal squeeze (dune and salt-marsh loss)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · Europe, N. America",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Tree planting on native grasslands (afforestation done badly)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": true,
+    "where": "T2 · Africa savanna; Card",
+    "placements": [
+      "T2",
+      "Card"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Fossil-fuel extraction on land (tundra, oil sands)",
+    "group": "A",
+    "driver": "land-sea-use",
+    "boundaries": [
+      "biosphere-integrity",
+      "land-system-change"
+    ],
+    "new": false,
+    "where": "M · Arctic tundra",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Overfishing and stock collapse",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Humboldt, West Africa",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Illegal, unreported and unregulated (IUU) fishing",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Humboldt, West Africa",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Bycatch (dolphins, turtles, seabirds)",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "M · Vaquita; L4 in fisheries missions",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Bottom trawling",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Europe North Sea, Polar",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Shark and ray finning",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · LatAm Galápagos, E&SE Asia",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Krill and forage-fish fishing",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Polar Oceans",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Wildlife trafficking (ivory, horn, scales)",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Africa poaching, Pangolin; GF · trade networks",
+    "placements": [
+      "M",
+      "GF"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Bushmeat hunting (\"empty forest\" syndrome)",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "L4 · Congo; T2 · Africa",
+    "placements": [
+      "T2",
+      "L4"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Exotic pet and ornamental trade (songbirds, reptiles, orchids, cacti, aquarium fish)",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · E&SE Asia songbirds, N. America cacti",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Overharvest of medicinal and wild plants",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Himalayan herbs; M · Red sanders",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Groundwater depletion",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity",
+      "freshwater-change"
+    ],
+    "new": true,
+    "where": "T2 · South Asia (Punjab), Middle East aquifers",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Fuelwood and charcoal overharvest",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "L4 · Congo, Sahel",
+    "placements": [
+      "L4"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Water over-extraction from rivers",
+    "group": "B",
+    "driver": "exploitation",
+    "boundaries": [
+      "biosphere-integrity",
+      "freshwater-change"
+    ],
+    "new": false,
+    "where": "M · Murray–Darling, Aral, Lake Chad",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Fossil-fuel emissions and global heating",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": true,
+    "where": "GF · Emissions",
+    "placements": [
+      "GF"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Marine heatwaves and coral bleaching",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": false,
+    "where": "M · Great Barrier Reef",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Ocean acidification (newly breached in 2025)",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": true,
+    "where": "M · Polar Oceans; GF · High Seas",
+    "placements": [
+      "M",
+      "GF"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Ocean deoxygenation",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": true,
+    "where": "L4 · Baltic and Gulf dead zones",
+    "placements": [
+      "L4"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Sea-ice loss",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": false,
+    "where": "M · Arctic, Emperor penguin",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Glacier and ice-sheet melt",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": false,
+    "where": "M · Himalaya",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Permafrost thaw",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": false,
+    "where": "M · Boreal and permafrost",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Sea-level rise and sinking islands",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": false,
+    "where": "M · Sundarbans; T2 · Pacific atolls",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Changed wildfire regimes",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": false,
+    "where": "M · Pantanal, Black Summer, Boreal",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Drought and water stress",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "freshwater-change",
+      "ocean-acidification"
+    ],
+    "new": false,
+    "where": "L4 and event cards everywhere",
+    "placements": [
+      "Event"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Range shifts (\"escalator to extinction\" for mountain species)",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": true,
+    "where": "T2 · N. America pika, Andes",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Phenological mismatch (flowers and pollinators out of sync)",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": true,
+    "where": "Event card; L4 · Pollinators",
+    "placements": [
+      "L4",
+      "Event"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Tipping points (Amazon dieback, Atlantic circulation)",
+    "group": "C",
+    "driver": "climate",
+    "boundaries": [
+      "climate-change",
+      "ocean-acidification"
+    ],
+    "new": true,
+    "where": "Card; Crisis Clock escalation",
+    "placements": [
+      "Card"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Plastics and microplastics",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · E&SE Asia rivers, Polar; GF · Plastics treaty",
+    "placements": [
+      "M",
+      "GF"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Ghost nets and marine debris",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · Oceania",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Nutrient runoff, eutrophication and dead zones",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": false,
+    "where": "M · Gulf, Baltic, Great Lakes; GF · Nitrogen",
+    "placements": [
+      "M",
+      "GF"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Pesticides (neonicotinoids, herbicide drift)",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · LatAm soy belt; L4 · Pollinators",
+    "placements": [
+      "M",
+      "L4"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Pharmaceuticals in the environment (diclofenac and vultures)",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · South Asia",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Forever chemicals (PFAS) and persistent organic pollutants",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · Europe, Polar",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Heavy metals and mercury",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": false,
+    "where": "M · Gold mining",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Oil spills and gas flaring",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · Gulf (Middle East)",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "E-waste and burning of toxic waste",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · Africa",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Untreated sewage",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": false,
+    "where": "M · Ganges",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Air pollution, smog and acid rain",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "T2 · South Asia crop-burning smog; L4 · haze",
+    "placements": [
+      "T2",
+      "L4"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Light pollution (birds, turtles, insects)",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "M · N. America",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Underwater noise (shipping, seismic surveys)",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "T2 · whales (Polar, N. America)",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Lead ammunition and rodenticide poisoning (condors, raptors)",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "T2 · N. America condor",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Salinization of soils and rivers",
+    "group": "D",
+    "driver": "pollution",
+    "boundaries": [
+      "biogeochemical-flows",
+      "novel-entities"
+    ],
+    "new": true,
+    "where": "L4 · Aral, Murray–Darling",
+    "placements": [
+      "L4"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Invasive predators on islands (rats, cats, stoats)",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Kākāpō",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Invasive plants (water hyacinth, lantana)",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Africa Lake Victoria, South Asia lantana",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Invasive aquatic species (zebra mussels, lionfish, Asian carp)",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Great Lakes; T2 · Caribbean lionfish",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Forest pests and pathogens (ash dieback, blister rust, Phytophthora)",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Europe, N. America, Oceania",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Amphibian chytrid fungus",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "M · LatAm Wildlife",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Avian influenza (H5N1) in wild birds and marine mammals",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Polar, South America coast",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "White-nose syndrome in bats",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · N. America",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Sea-star wasting disease",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "L4 · kelp collapse",
+    "placements": [
+      "L4"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Feral grazers on islands (goats, pigs)",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Socotra, Galápagos",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Zoonotic spillover and the One Health link",
+    "group": "E",
+    "driver": "invasives",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "Card; GF · trade networks",
+    "placements": [
+      "GF",
+      "Card"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Insect and pollinator decline",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Europe",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Amphibian decline (about 41% of species threatened)",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "M · LatAm chytrid",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Freshwater and migratory fish",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · European eel, Mekong catfish",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Vulture collapse",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "M · South Asia",
+    "placements": [
+      "M"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Migratory birds and flyways",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Yellow Sea; M · light pollution",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Sea turtles (nesting beaches, bycatch, light)",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Oceania, LatAm Caribbean",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Great whales (ship strikes, entanglement, noise)",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · N. America right whale",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Large carnivores and human–wildlife conflict",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "L4 · Africa elephants, South Asia tiger; T2 · jaguar",
+    "placements": [
+      "T2",
+      "L4"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Crop wild relatives and seed diversity",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2; the seed-bank action",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Fungi, lichens and mosses",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "M · Antarctic moss; T2 · Europe",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Cycads and cacti (cycads are the most threatened plant group)",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": true,
+    "where": "T2 · Africa cycads, N. America cacti",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Endemic island flora",
+    "group": "F",
+    "driver": "cross-cutting",
+    "boundaries": [
+      "biosphere-integrity"
+    ],
+    "new": false,
+    "where": "M · Socotra; T2 · Hawaii",
+    "placements": [
+      "M",
+      "T2"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Overconsumption and food waste",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [
+      "biogeochemical-flows"
+    ],
+    "new": true,
+    "where": "GF · Nitrogen, Plastics; supply-chain action",
+    "placements": [
+      "GF"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Harmful subsidies (fossil fuels, fisheries, farming)",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "GF · Subsidies",
+    "placements": [
+      "GF"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Weak enforcement and corruption",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "L4 · \"Enforcement gap\" multiplier in trafficking and logging missions",
+    "placements": [
+      "L4"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Greenwashing and false carbon offsets",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "GF · Subsidies & greenwashing; event cards",
+    "placements": [
+      "GF",
+      "Event"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Insecure Indigenous and local land rights",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "L4 · land-grab claim; the land-titling action",
+    "placements": [
+      "L4"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Violence against environmental defenders",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "Defender Safety mechanic (section 4)",
+    "placements": [
+      "Mechanic"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Armed conflict and ecocide",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "T2 · Middle East marshes; event card",
+    "placements": [
+      "T2",
+      "Event"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Overtourism",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "T2 · Galápagos, Mediterranean",
+    "placements": [
+      "T2"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Missed global targets (30×30, Kunming-Montreal framework)",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "GF · High Seas & 30×30",
+    "placements": [
+      "GF"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Trade-offs of the energy transition (hydro dams, mineral mining, wind and solar siting)",
+    "group": "G",
+    "driver": "indirect",
+    "boundaries": [],
+    "new": true,
+    "where": "T2 nodes; a \"Green vs green\" event card",
+    "placements": [
+      "Event"
+    ]
+  }
+]

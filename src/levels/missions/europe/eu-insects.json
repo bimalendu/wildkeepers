@@ -1,0 +1,87 @@
+{
+  "id": "eu-insects",
+  "title": "The Silent Meadows",
+  "blurb": "Flying insect numbers have collapsed even inside protected areas. Restore meadows and hedgerows, and win rules that protect pollinators.",
+  "region": "europe",
+  "theme": "wildlife",
+  "issue": "eu-insects-issue",
+  "catalogue": [
+    74,
+    52
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 218068,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.72,
+  "map": {
+    "base": "grass",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Pesticide drift from fields",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "grass",
+        "forest"
+      ],
+      "catalogue": [
+        52,
+        74
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Hedgerow and meadow loss",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "grass",
+        "forest"
+      ],
+      "catalogue": [
+        52,
+        74
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "wild-bees",
+      "name": "Wild bees",
+      "habitat": [
+        "grass"
+      ],
+      "need": 25,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Sow wildflowers",
+    "defend": "Spray-free buffer",
+    "remove": "Clear pesticide",
+    "protect": "Pollinator reserve",
+    "campaign": "Pesticide-reduction campaign"
+  },
+  "realWorld": "Let part of your garden grow wild, avoid garden pesticides, plant native flowers for pollinators, and ask local councils to mow verges less often."
+}

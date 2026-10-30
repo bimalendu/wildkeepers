@@ -1,0 +1,78 @@
+{
+  "id": "mc-steppe",
+  "title": "The Overgrazed Steppe",
+  "blurb": "Booming herds of sheep and goats are degrading the grassland. Restore the pasture and help herders manage it.",
+  "region": "middle-east-central-asia",
+  "theme": "land",
+  "issue": "mc-steppe-issue",
+  "catalogue": [
+    19
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 208034,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.59,
+  "map": {
+    "base": "grass",
+    "pressure": [
+      "farm",
+      "mine"
+    ],
+    "side": "n",
+    "depth": 6
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Overgrazing by growing herds",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        19,
+        13,
+        45
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Mining roads and fencing",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        19,
+        13,
+        45
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "mongolian-gazelle",
+      "name": "Mongolian gazelle",
+      "habitat": [
+        "grass"
+      ],
+      "need": 34,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Reseed",
+    "defend": "Herder patrol",
+    "remove": "Remove a fence line",
+    "protect": "Community pasture",
+    "campaign": "Rotational-grazing campaign"
+  },
+  "realWorld": "Buy wool and cashmere with traceable, sustainable-grazing certification and ask brands how they manage herd sizes."
+}

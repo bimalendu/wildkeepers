@@ -1,0 +1,94 @@
+{
+  "id": "ph-krill",
+  "title": "Krill: The Base of the Food Web",
+  "blurb": "Trawlers take Antarctic krill from the same waters where whales and penguins feed. Keep the fleets spread out, protect the feeding grounds and win a sanctuary.",
+  "region": "polar-high-seas",
+  "theme": "wildlife",
+  "issue": "ph-krill-issue",
+  "catalogue": [
+    28
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 216051,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.81,
+  "map": {
+    "base": "ocean",
+    "accent": "ice",
+    "accentAmount": 0.15,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Krill trawlers",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "humpback"
+      ],
+      "catalogue": [
+        28,
+        40,
+        94
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Fleets crowding one feeding ground",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "chinstrap"
+      ],
+      "catalogue": [
+        28,
+        40,
+        94
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "humpback",
+      "name": "Humpback whale",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 39,
+      "homes": 2
+    },
+    {
+      "id": "chinstrap",
+      "name": "Chinstrap penguin",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 39,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Let the krill recover",
+    "defend": "Catch-limit patrol",
+    "remove": "Turn back a trawler",
+    "protect": "Marine protected area",
+    "campaign": "Sanctuary campaign"
+  },
+  "realWorld": "Check that krill-oil and fish-feed products come from certified, precautionary sources, and support the call for a Southern Ocean sanctuary."
+}

@@ -1,0 +1,95 @@
+{
+  "id": "es-coral-triangle",
+  "title": "The Coral Triangle",
+  "blurb": "The Coral Triangle is the world’s centre of coral diversity, and its reefs face overfishing, destructive fishing, polluted run-off and coastal development. Patrol, protect and win the rules.",
+  "region": "east-southeast-asia",
+  "theme": "ocean",
+  "issue": "es-coral-triangle-issue",
+  "catalogue": [
+    8,
+    23
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 216051,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.75,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.35,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Blast and cyanide fishing",
+      "strength": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "hawksbill-turtle"
+      ],
+      "catalogue": [
+        8,
+        23
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Overfishing and coastal development",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "whale-shark"
+      ],
+      "catalogue": [
+        8,
+        23
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "hawksbill-turtle",
+      "name": "Hawksbill turtle",
+      "habitat": [
+        "ocean",
+        "reef"
+      ],
+      "need": 36,
+      "homes": 2
+    },
+    {
+      "id": "whale-shark",
+      "name": "Whale shark",
+      "habitat": [
+        "ocean",
+        "reef"
+      ],
+      "need": 36,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Regrow coral",
+    "defend": "Reef patrol",
+    "remove": "Haul in illegal gear",
+    "protect": "Marine reserve",
+    "campaign": "Anti-blast-fishing campaign"
+  },
+  "realWorld": "Choose reef-friendly seafood, never buy corals or reef souvenirs, and ask dive operators about their reef-protection rules."
+}

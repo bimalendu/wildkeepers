@@ -1,0 +1,98 @@
+{
+  "id": "la-mercury",
+  "title": "Gold and Mercury",
+  "blurb": "Small-scale gold mining is the world’s largest source of mercury pollution to air. Back communities, stand up to miners safely and clean the water.",
+  "region": "latin-america",
+  "theme": "freshwater",
+  "issue": "la-mercury-issue",
+  "catalogue": [
+    13,
+    55,
+    91
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 205102,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.62,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "mine",
+      "road"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "claims",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Illegal mining claims",
+      "strength": 4,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        13,
+        55,
+        91
+      ]
+    },
+    {
+      "id": "mercury",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Mercury from gold processing",
+      "strength": 2,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        13,
+        55,
+        91
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "giant-otter",
+      "name": "Giant otter",
+      "habitat": [
+        "river",
+        "lake"
+      ],
+      "need": 6,
+      "homes": 2
+    },
+    {
+      "id": "arapaima",
+      "name": "Arapaima",
+      "habitat": [
+        "forest",
+        "river"
+      ],
+      "need": 34,
+      "homes": 2
+    }
+  ],
+  "risky": 6,
+  "labels": {
+    "restore": "Replant",
+    "defend": "Patrol",
+    "remove": "Clean up",
+    "protect": "Indigenous land title",
+    "campaign": "Ban mercury in mining"
+  },
+  "realWorld": "Ask jewellers where their gold comes from and prefer recycled or independently certified gold, and support Indigenous-led monitoring groups."
+}

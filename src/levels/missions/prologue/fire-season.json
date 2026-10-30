@@ -1,0 +1,84 @@
+{
+  "id": "prologue-2",
+  "title": "Fire Season: A Dry Wetland",
+  "blurb": "Wildfire runs with the wind. Put it out and protect what matters.",
+  "region": "prologue",
+  "theme": "climate",
+  "issue": "prologue-fire",
+  "catalogue": [
+    44
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 202,
+  "turns": 10,
+  "energy": 4,
+  "floor": 0.62,
+  "map": {
+    "base": "grass",
+    "accent": "wetland",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "w",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "wildfire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Wildfire",
+      "strength": 3,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random"
+    }
+  ],
+  "species": [
+    {
+      "id": "marsh-deer",
+      "name": "Marsh deer",
+      "habitat": [
+        "wetland",
+        "grass"
+      ],
+      "need": 24
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Firebreak",
+    "remove": "Put out fire",
+    "protect": "Protected area"
+  },
+  "actions": [
+    "restore",
+    "defend",
+    "remove",
+    "protect"
+  ],
+  "events": [
+    {
+      "id": "dry",
+      "turn": 4,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "wildfire",
+        "amount": 1
+      }
+    }
+  ],
+  "hints": [
+    "Remove (2\u26a1) puts out a fire. A fire also burns itself out after two turns.",
+    "Protect (3\u26a1) makes a tile and the ring around it safe from fire for good. It costs more, so use it where fire keeps coming.",
+    "The arrows show where the fire goes next. Defend one tile in the way, or Protect the whole area."
+  ],
+  "realWorld": "Follow local fire-danger rules and burn bans, and support or volunteer with your local fire service and land-restoration groups."
+}

@@ -1,0 +1,63 @@
+{
+  "id": "prologue-1",
+  "title": "First Steps: A Forest Edge",
+  "blurb": "Learn the basics: see what the threat will do, restore land and defend it.",
+  "region": "prologue",
+  "theme": "land",
+  "issue": "prologue-forest",
+  "catalogue": [
+    1
+  ],
+  "size": [
+    7,
+    9
+  ],
+  "seed": 101,
+  "turns": 8,
+  "energy": 3,
+  "floor": 0.55,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6
+  },
+  "threats": [
+    {
+      "id": "pasture",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Cattle pasture creeping in",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 3
+    }
+  ],
+  "species": [
+    {
+      "id": "tapir",
+      "name": "Lowland tapir",
+      "habitat": [
+        "forest"
+      ],
+      "need": 24
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Fence"
+  },
+  "actions": [
+    "restore",
+    "defend"
+  ],
+  "hints": [
+    "Red arrows show exactly where the pasture will spread at the end of your turn. Nothing is hidden.",
+    "Defend a tile an arrow points at and it is safe this turn. Restore lifts a tile one step: Lost, Damaged, Healthy.",
+    "You get 3 Energy (\u26a1) a turn and it does not carry over. Spend it all, then end the turn."
+  ],
+  "realWorld": "Look for credible deforestation-free labels (such as FSC on wood and paper) and ask retailers where their beef, soy and palm oil come from."
+}

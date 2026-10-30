@@ -1,0 +1,92 @@
+{
+  "id": "gf-nitrogen",
+  "title": "The Nitrogen Problem",
+  "blurb": "More than half of the nitrogen added to farmland is lost to the environment. Buffer the farms, clean the water and cut the waste.",
+  "region": "global-fronts",
+  "theme": "freshwater",
+  "issue": "gf-nitrogen-issue",
+  "catalogue": [
+    51,
+    86
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 205051,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.66,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Fertiliser runoff",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        51,
+        86,
+        4
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Manure and food-waste inflows",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        51,
+        86,
+        4
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "freshwater-mussel",
+      "name": "Freshwater mussel",
+      "habitat": [
+        "river",
+        "lake"
+      ],
+      "need": 6,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rebuild wetland",
+    "defend": "Precision fertilising",
+    "remove": "Clean up a spill",
+    "protect": "Riverside buffer",
+    "campaign": "Nutrient-cut campaign"
+  },
+  "realWorld": "Waste less food, eat a little less meat and dairy, and support farms and policies that cut fertiliser losses."
+}

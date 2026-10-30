@@ -1,0 +1,79 @@
+{
+  "id": "af-congo",
+  "title": "The Congo Rainforest Edge",
+  "blurb": "Small-scale farm clearing and wood-cutting for firewood and charcoal eat into the Congo rainforest. Hold the edge and keep the forest elephants’ corridors open.",
+  "region": "africa",
+  "theme": "land",
+  "issue": "af-congo-issue",
+  "catalogue": [
+    1,
+    34
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 199017,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.57,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Clearing for farms and charcoal",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        34,
+        2,
+        30
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "New logging roads open the forest",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        34,
+        2,
+        30
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "forest-elephant",
+      "name": "Forest elephant",
+      "habitat": [
+        "forest"
+      ],
+      "need": 25,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Patrol",
+    "remove": "Clear the road",
+    "protect": "Land title",
+    "campaign": "Supply-chain campaign"
+  },
+  "realWorld": "Buy wood and paper with FSC certification, ask where charcoal and timber come from, and support community-forestry groups in the Congo Basin."
+}

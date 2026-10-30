@@ -1,0 +1,74 @@
+{
+  "id": "es-mekong",
+  "title": "The Mighty Mekong’s Fish",
+  "blurb": "Dams are cutting fish diversity in Mekong tributaries and, if all are built, could trap almost all of the sediment that feeds the delta. Open the river and fight for its flow.",
+  "region": "east-southeast-asia",
+  "theme": "freshwater",
+  "issue": "es-mekong-issue",
+  "catalogue": [
+    12,
+    76
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 216068,
+  "turns": 15,
+  "energy": 4,
+  "floor": 0.7,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.3,
+    "pressure": [
+      "town",
+      "mine"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Dams that block fish migration and trap sediment",
+      "strength": 5,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        12,
+        76,
+        16
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "mekong-giant-catfish",
+      "name": "Mekong giant catfish",
+      "habitat": [
+        "river",
+        "lake"
+      ],
+      "need": 8,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Fish ladder",
+    "remove": "Remove a barrier",
+    "protect": "Spawning refuge",
+    "campaign": "Dam-planning campaign"
+  },
+  "realWorld": "Ask where freshwater fish and rice you buy come from, support river-basin conservation groups, and push banks and companies to publish the effects of dams they fund."
+}

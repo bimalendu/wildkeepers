@@ -1,0 +1,72 @@
+{
+  "id": "ph-acidification",
+  "title": "The Acid Sea",
+  "blurb": "The sea absorbs our carbon and turns more acidic, and pteropods, tiny sea snails that many species eat, already show shell damage. Clean the water and win the emissions case.",
+  "region": "polar-high-seas",
+  "theme": "ocean",
+  "issue": "ph-acidification-issue",
+  "catalogue": [
+    38
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 216068,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.69,
+  "map": {
+    "base": "ocean",
+    "accent": "ice",
+    "accentAmount": 0.2,
+    "pressure": [
+      "town"
+    ],
+    "side": "n",
+    "river": false,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "plume",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Acidified water spreading from the surface",
+      "strength": 3,
+      "from": "edge",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "ocean",
+        "reef",
+        "seagrass",
+        "kelp"
+      ],
+      "catalogue": [
+        36,
+        38,
+        37
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "pteropod",
+      "name": "Sea butterfly (pteropod)",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 21,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rebuild shell-forming life",
+    "defend": "Alkaline buffer",
+    "remove": "Clear local pollution",
+    "protect": "Protected cold-water sea",
+    "campaign": "Cut-emissions campaign"
+  },
+  "realWorld": "Cutting your own carbon emissions helps, as does supporting policies that reduce them; ocean acidification follows the carbon dioxide we put into the air."
+}

@@ -1,0 +1,101 @@
+{
+  "id": "sa-smog",
+  "title": "The Smoke Season",
+  "blurb": "Every autumn farmers burn crop stubble across Punjab and Haryana, and the smoke adds to Delhi’s smog. Put out the fires and push for cleaner ways to clear the land.",
+  "region": "south-asia",
+  "theme": "pollution",
+  "issue": "sa-smog-issue",
+  "catalogue": [
+    59
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 212085,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.65,
+  "map": {
+    "base": "grass",
+    "accent": "wetland",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "w",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "fire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Crop-residue fires",
+      "strength": 3,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random",
+      "catalogue": [
+        59
+      ]
+    },
+    {
+      "id": "conversion",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Burning of waste at the field edge",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        59
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "sarus-crane",
+      "name": "Sarus crane",
+      "habitat": [
+        "grass",
+        "wetland"
+      ],
+      "need": 36,
+      "homes": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "dry1",
+      "turn": 3,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dry2",
+      "turn": 7,
+      "title": "Heat wave",
+      "text": "Record temperatures dry out the vegetation again. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Fire watch",
+    "remove": "Put out fire",
+    "protect": "Straw-free zone",
+    "campaign": "Clean-air campaign"
+  },
+  "realWorld": "Never burn rubbish or garden waste, choose lower-emission transport where you can, and support farmers’ schemes that use crop residue instead of burning it."
+}

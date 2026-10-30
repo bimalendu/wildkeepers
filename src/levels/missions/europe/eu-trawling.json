@@ -1,0 +1,95 @@
+{
+  "id": "eu-trawling",
+  "title": "Trawled Protected Seas",
+  "blurb": "Bottom trawlers still work inside Europe’s marine protected areas. Patrol, enforce and campaign until protection means protection.",
+  "region": "europe",
+  "theme": "ocean",
+  "issue": "eu-trawling-issue",
+  "catalogue": [
+    26,
+    23
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 218085,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.8,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.35,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Bottom trawlers in protected areas",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "harbour-porpoise"
+      ],
+      "catalogue": [
+        26,
+        23,
+        88
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Bycatch of porpoises and sharks",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "common-skate"
+      ],
+      "catalogue": [
+        26,
+        23,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "harbour-porpoise",
+      "name": "Harbour porpoise",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 30,
+      "homes": 2
+    },
+    {
+      "id": "common-skate",
+      "name": "Common skate",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 30,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Restore the seabed",
+    "defend": "Fisheries patrol",
+    "remove": "Haul in illegal gear",
+    "protect": "No-take zone",
+    "campaign": "Trawling-ban campaign"
+  },
+  "realWorld": "Choose seafood caught with low-impact gear and certified sustainable, ask retailers if it was trawled in protected areas, and back campaigns for enforcement in marine protected areas."
+}

@@ -1,0 +1,465 @@
+{
+  "id": "polar-high-seas",
+  "name": "Polar & High Seas",
+  "blurb": "The polar regions and the open ocean: melting ice and thawing ground, a sea turning more acid, and industry heading for the deep seabed, the krill and the boreal forest.",
+  "issues": [
+    {
+      "id": "ph-deep-sea-issue",
+      "title": "The Deep-Sea Gold Rush",
+      "theme": "deepsea",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 5,
+        "reach": 4
+      },
+      "catalogue": [
+        15
+      ],
+      "drivers": [
+        {
+          "name": "Exploration contracts for seabed nodules",
+          "catalogue": [
+            15
+          ]
+        },
+        {
+          "name": "Demand for battery metals",
+          "catalogue": [
+            14
+          ]
+        },
+        {
+          "name": "Weak rules on the high seas",
+          "catalogue": [
+            94
+          ]
+        }
+      ],
+      "sites": [
+        "The Clarion–Clipperton Zone",
+        "A hydrothermal vent field",
+        "An abyssal plain"
+      ],
+      "fact": {
+        "text": "The International Seabed Authority’s contract list shows 32 exploration contracts, one of which (held by CPRM) renounced its rights in December 2021; 19 are for polymetallic nodules, 17 of them in the Clarion–Clipperton Fracture Zone.",
+        "source": "International Seabed Authority, exploration contracts",
+        "url": "https://www.isa.org.jm/exploration-contracts/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Ask the companies that make your phone, car and battery whether they will source metal from the deep seabed, and support recycling and the call for a moratorium.",
+      "mission": "ph-deep-sea"
+    },
+    {
+      "id": "ph-oil-sands-issue",
+      "title": "The Oil Sands and the Boreal",
+      "theme": "land",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 4,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        22,
+        13
+      ],
+      "drivers": [
+        {
+          "name": "Open-pit and in-situ extraction",
+          "catalogue": [
+            22
+          ]
+        },
+        {
+          "name": "Tailings ponds and seepage",
+          "catalogue": [
+            13
+          ]
+        },
+        {
+          "name": "Seismic lines that fragment the forest",
+          "catalogue": [
+            11
+          ]
+        }
+      ],
+      "sites": [
+        "The Athabasca region",
+        "A boreal peatland",
+        "A caribou range"
+      ],
+      "fact": {
+        "text": "An Environmental Defence and CPAWS report found that as of 2020 the total volume of Alberta’s oil sands tailings “ponds” was estimated at 1.4 trillion litres, and the total tailings area was over 300 km² in 2020.",
+        "source": "Environmental Defence and CPAWS, “50 Years of Sprawling Tailings” (May 2022)",
+        "url": "https://environmentaldefence.ca/report/50-years-of-sprawling-tailings/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Support Indigenous-led conservation areas, ask whether your pension or bank funds new extraction projects, and use less fossil fuel where you can.",
+      "mission": "ph-oil-sands"
+    },
+    {
+      "id": "ph-krill-issue",
+      "title": "Krill: The Base of the Food Web",
+      "theme": "wildlife",
+      "tier": 1,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 3,
+        "reach": 4
+      },
+      "catalogue": [
+        28
+      ],
+      "drivers": [
+        {
+          "name": "Concentrated krill catches near penguin colonies",
+          "catalogue": [
+            28
+          ]
+        },
+        {
+          "name": "Warming that pushes krill south",
+          "catalogue": [
+            40
+          ]
+        },
+        {
+          "name": "No agreed way to spread the catch",
+          "catalogue": [
+            94
+          ]
+        }
+      ],
+      "sites": [
+        "The Antarctic Peninsula",
+        "A chinstrap penguin colony",
+        "A humpback feeding ground"
+      ],
+      "fact": {
+        "text": "The Antarctic krill fishery closed early for the second year in a row on 12 August 2026 after reaching its 620,000-tonne trigger level; CCAMLR’s secretariat reported that the trigger was first reached on 1 August 2025, after the lapse of conservation measure 51-07 changed how the fishery was spread in space and time.",
+        "source": "CCAMLR Secretariat, SC-CAMLR-44/BG/36 Rev. 2 (2025), and Mongabay (August 2026)",
+        "url": "https://meetings.ccamlr.org/en/sc-camlr-44/bg/36-rev-2",
+        "also": [
+          {
+            "source": "Mongabay (August 2026), on the 2026 closure",
+            "url": "https://news.mongabay.com/2026/08/antarctic-krill-fishery-closes-months-early-amid-increasing-fishing-pressure/"
+          },
+          {
+            "source": "The Fish Site (14 August 2026), on the 2026 closure",
+            "url": "https://thefishsite.com/articles/antarctic-krill-fishery-closes-for-2026"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Check that krill-oil and fish-feed products come from certified, precautionary sources, and support the call for a Southern Ocean sanctuary.",
+      "mission": "ph-krill"
+    },
+    {
+      "id": "ph-acidification-issue",
+      "title": "The Acid Sea",
+      "theme": "ocean",
+      "tier": 1,
+      "driver": "climate",
+      "priority": {
+        "severity": 5,
+        "urgency": 5,
+        "irreversibility": 5,
+        "reach": 5
+      },
+      "catalogue": [
+        38
+      ],
+      "drivers": [
+        {
+          "name": "Carbon dioxide absorbed by the ocean",
+          "catalogue": [
+            36
+          ]
+        },
+        {
+          "name": "Cold water that absorbs more CO₂",
+          "catalogue": [
+            38
+          ]
+        },
+        {
+          "name": "Added stress from warming and pollution",
+          "catalogue": [
+            37
+          ]
+        }
+      ],
+      "sites": [
+        "The Southern Ocean",
+        "The Arctic Ocean",
+        "A pteropod swarm"
+      ],
+      "fact": {
+        "text": "The 2025 Planetary Health Check found that seven of nine planetary boundaries are now breached, with ocean acidification breached for the first time; NOAA says the surface ocean’s pH has fallen by 0.1 units since the industrial era, about a 30 percent increase in acidity, and pteropods are showing signs of shell damage.",
+        "source": "Stockholm University, reporting the Planetary Health Check 2025 (25 September 2025)",
+        "url": "https://www.su.se/english/news/articles/2025-09-25-seven-of-nine-planetary-boundaries-now-breached",
+        "also": [
+          {
+            "source": "NOAA, “Ocean acidification”",
+            "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Cutting your own carbon emissions helps, as does supporting policies that reduce them; ocean acidification follows the carbon dioxide we put into the air.",
+      "mission": "ph-acidification"
+    },
+    {
+      "id": "ph-sea-ice-issue",
+      "title": "The Emperor Penguins’ Ice",
+      "theme": "climate",
+      "tier": 1,
+      "driver": "climate",
+      "priority": {
+        "severity": 5,
+        "urgency": 5,
+        "irreversibility": 5,
+        "reach": 4
+      },
+      "catalogue": [
+        40
+      ],
+      "drivers": [
+        {
+          "name": "Warming air and ocean",
+          "catalogue": [
+            36
+          ]
+        },
+        {
+          "name": "Sea-ice loss",
+          "catalogue": [
+            40
+          ]
+        }
+      ],
+      "sites": [
+        "The Bellingshausen Sea",
+        "An emperor penguin colony",
+        "A fast-ice platform"
+      ],
+      "fact": {
+        "text": "A 2023 study in Communications Earth & Environment found that in 2022 four of the five emperor penguin breeding sites in the central and eastern Bellingshausen Sea region had total breeding failure, because sea ice broke up before the chicks could grow waterproof feathers.",
+        "source": "Fretwell et al., Communications Earth & Environment (2023), “Record low 2022 Antarctic sea ice led to catastrophic breeding failure of emperor penguins”",
+        "url": "https://www.nature.com/articles/s43247-023-00927-x",
+        "also": [
+          {
+            "source": "NBC News (24 August 2023), reporting the study",
+            "url": "https://nbcnews.com/science/environment/emperor-penguin-sites-experienced-total-breeding-failure-sea-ice-loss-rcna101011"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Cutting your own carbon emissions and backing policies that cut them is the main lever; you can also support colony monitoring projects that track penguins from satellites.",
+      "mission": "ph-sea-ice"
+    },
+    {
+      "id": "ph-permafrost-issue",
+      "title": "The Thawing Ground",
+      "theme": "climate",
+      "tier": 1,
+      "driver": "climate",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 5,
+        "reach": 5
+      },
+      "catalogue": [
+        42
+      ],
+      "drivers": [
+        {
+          "name": "Arctic warming",
+          "catalogue": [
+            36
+          ]
+        },
+        {
+          "name": "Abrupt thaw and ground collapse",
+          "catalogue": [
+            42
+          ]
+        },
+        {
+          "name": "Carbon dioxide and methane release",
+          "catalogue": [
+            42
+          ]
+        }
+      ],
+      "sites": [
+        "The North Slope",
+        "A Siberian thaw-slump",
+        "A caribou calving ground"
+      ],
+      "fact": {
+        "text": "The US National Snow and Ice Data Center says scientists estimate about 1,400 gigatons of carbon are frozen in permafrost, about 2.5 times the roughly 850 gigatons in the atmosphere, and that thawing releases carbon dioxide and methane.",
+        "source": "NSIDC, “Why frozen ground matters”",
+        "url": "https://nsidc.org/learn/parts-cryosphere/frozen-ground-permafrost/why-frozen-ground-matters",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Cutting your own carbon emissions and backing policies that cut them is the main lever, since thaw releases carbon dioxide and methane.",
+      "mission": "ph-permafrost"
+    },
+    {
+      "id": "ph-arctic-plastics-issue",
+      "title": "Plastic at the Pole",
+      "theme": "pollution",
+      "tier": 1,
+      "driver": "pollution",
+      "priority": {
+        "severity": 3,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 4
+      },
+      "catalogue": [
+        49,
+        54
+      ],
+      "drivers": [
+        {
+          "name": "Plastic arriving from far-off sources",
+          "catalogue": [
+            49
+          ]
+        },
+        {
+          "name": "Chemicals that attach to plastic",
+          "catalogue": [
+            54
+          ]
+        }
+      ],
+      "sites": [
+        "An Arctic beach",
+        "The Barents Sea",
+        "A seabird colony"
+      ],
+      "fact": {
+        "text": "The Arctic Monitoring and Assessment Programme says microplastics have been found in Arctic snow, sea-ice, seawater and sediments collected on the ocean floor, that whales, fish and birds can ingest larger pieces, and that the plastic pollution tide is also rising in the Arctic.",
+        "source": "AMAP Litter and Microplastics Expert Group",
+        "url": "https://litterandmicroplastics.amap.no/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Use less single-use plastic, support a strong global plastics treaty, and take part in shoreline cleanups.",
+      "mission": "ph-arctic-plastics"
+    },
+    {
+      "id": "ph-avian-flu",
+      "title": "Bird flu in seabirds and seals",
+      "theme": "wildlife",
+      "tier": 2,
+      "driver": "invasives",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 4
+      },
+      "catalogue": [
+        69
+      ],
+      "drivers": [
+        {
+          "name": "H5N1 in dense colonies"
+        },
+        {
+          "name": "Spread along flyways"
+        }
+      ],
+      "sites": [
+        "A seabird colony"
+      ]
+    },
+    {
+      "id": "ph-trawling",
+      "title": "Bottom trawling in polar seas",
+      "theme": "ocean",
+      "tier": 2,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        26
+      ],
+      "drivers": [
+        {
+          "name": "Trawls opening new ice-free grounds"
+        }
+      ],
+      "sites": [
+        "A cold-water coral bank"
+      ]
+    },
+    {
+      "id": "ph-ice-sheets",
+      "title": "Melting ice sheets",
+      "theme": "climate",
+      "tier": 2,
+      "driver": "climate",
+      "priority": {
+        "severity": 5,
+        "urgency": 4,
+        "irreversibility": 5,
+        "reach": 5
+      },
+      "catalogue": [
+        41,
+        43
+      ],
+      "drivers": [
+        {
+          "name": "Warming air and ocean"
+        },
+        {
+          "name": "Meltwater flowing to the sea"
+        }
+      ],
+      "sites": [
+        "The Greenland ice sheet"
+      ]
+    },
+    {
+      "id": "ph-bycatch",
+      "title": "Longline bycatch of albatrosses",
+      "theme": "ocean",
+      "tier": 2,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        25
+      ],
+      "drivers": [
+        {
+          "name": "Baited hooks near the surface"
+        }
+      ],
+      "sites": [
+        "A Southern Ocean fishing ground"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "gf-wildlife-trade",
+  "title": "The Routes of Wildlife Crime",
+  "blurb": "Illegally caught wildlife can slip into legal trade flows, and the trade can spread disease. Shut the routes and break the networks.",
+  "region": "global-fronts",
+  "theme": "wildlife",
+  "issue": "gf-wildlife-trade-issue",
+  "catalogue": [
+    29,
+    73
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 205068,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.65,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.25,
+    "pressure": [
+      "town",
+      "road",
+      "mine"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "network",
+      "kind": "network",
+      "behaviour": "spread",
+      "label": "Trade routes spreading from ports and roads",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        29,
+        73,
+        88
+      ]
+    },
+    {
+      "id": "demand",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Traffickers hunting the animals",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 2,
+      "hurts": [
+        "pangolin"
+      ],
+      "catalogue": [
+        29,
+        73,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "pangolin",
+      "name": "Pangolin",
+      "habitat": [
+        "forest"
+      ],
+      "need": 20,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Restore habitat",
+    "defend": "Customs inspection",
+    "remove": "Shut a trafficking route",
+    "protect": "Protected area",
+    "campaign": "Trade-ban campaign"
+  },
+  "realWorld": "Never buy products made from wild animals or plants without legal proof of origin, report suspicious online wildlife sales, and support the groups that train customs and rangers."
+}

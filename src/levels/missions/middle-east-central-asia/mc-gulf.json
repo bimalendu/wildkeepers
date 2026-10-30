@@ -1,0 +1,89 @@
+{
+  "id": "mc-gulf",
+  "title": "Flares over the Gulf",
+  "blurb": "Oil fields burn off waste gas, and Iraq is one of the world’s biggest flarers. Clean up, cap the flares and protect the wetlands.",
+  "region": "middle-east-central-asia",
+  "theme": "pollution",
+  "issue": "mc-gulf-issue",
+  "catalogue": [
+    56
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 208051,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.69,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Gas flaring and soot",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        56,
+        88
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Oil seeping into the wetlands",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        56,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "greater-flamingo",
+      "name": "Greater flamingo",
+      "habitat": [
+        "wetland",
+        "lake"
+      ],
+      "need": 25,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Containment booms",
+    "remove": "Clean up oil",
+    "protect": "Wetland reserve",
+    "campaign": "Capture-the-gas campaign"
+  },
+  "realWorld": "Cut your own fossil-fuel use where you can, and support groups that track flaring and oil spills with satellite data."
+}

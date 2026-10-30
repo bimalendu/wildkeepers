@@ -1,0 +1,89 @@
+{
+  "id": "es-plastics",
+  "title": "Plastic in the Rivers",
+  "blurb": "Small urban rivers carry plastic waste to the sea. Clear the channels, stop the leaks and change the packaging.",
+  "region": "east-southeast-asia",
+  "theme": "pollution",
+  "issue": "es-plastics-issue",
+  "catalogue": [
+    49
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 216085,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.7,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Plastic washing into the river",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        49,
+        86
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Dumping into drains and canals",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        49,
+        86
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "irrawaddy-dolphin",
+      "name": "Irrawaddy dolphin",
+      "habitat": [
+        "river",
+        "mangrove"
+      ],
+      "need": 6,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "Trash trap",
+    "remove": "Clean up",
+    "protect": "Clean river zone",
+    "campaign": "Packaging campaign"
+  },
+  "realWorld": "Cut single-use plastic where you can, use proper bins and recycling, and support river clean-ups and waste-collection schemes in cities."
+}

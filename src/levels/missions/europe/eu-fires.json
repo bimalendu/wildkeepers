@@ -1,0 +1,104 @@
+{
+  "id": "eu-fires",
+  "title": "Europe’s Burning South",
+  "blurb": "Summer heatwaves fed record fires across southern Europe in 2025. Cut firebreaks, put out the fire and protect what is left.",
+  "region": "europe",
+  "theme": "climate",
+  "issue": "eu-fires-issue",
+  "catalogue": [
+    44,
+    45
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 218102,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.67,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.3,
+    "pressure": [
+      "farm",
+      "town"
+    ],
+    "side": "s",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "fire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Wildfire",
+      "strength": 3,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random",
+      "catalogue": [
+        45,
+        44
+      ]
+    },
+    {
+      "id": "conversion",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Rural abandonment and clearing",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        45,
+        44
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "iberian-lynx",
+      "name": "Iberian lynx",
+      "habitat": [
+        "forest",
+        "grass"
+      ],
+      "need": 31,
+      "homes": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "dry1",
+      "turn": 3,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dry2",
+      "turn": 7,
+      "title": "Heat wave",
+      "text": "Record temperatures dry out the vegetation again. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Firebreak",
+    "remove": "Put out fire",
+    "protect": "Fire-safe forest",
+    "campaign": "Fire-prevention campaign"
+  },
+  "realWorld": "Follow fire-danger rules and bans in dry weather, never leave fires or barbecues unattended, and support grazing and forest-management schemes that reduce fuel."
+}

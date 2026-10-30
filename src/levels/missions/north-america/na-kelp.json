@@ -1,0 +1,99 @@
+{
+  "id": "na-kelp",
+  "title": "The Kelp that Vanished",
+  "blurb": "A marine heatwave and a disease that killed the sea stars let urchins strip the kelp. Cool the water, protect the survivors and bring the predators back.",
+  "region": "north-america",
+  "theme": "ocean",
+  "issue": "na-kelp-issue",
+  "catalogue": [
+    7,
+    71
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 207119,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.8,
+  "map": {
+    "base": "ocean",
+    "accent": "kelp",
+    "accentAmount": 0.45,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "heatwave",
+      "kind": "heat",
+      "behaviour": "strike",
+      "label": "Marine heatwave",
+      "strength": 5,
+      "start": 3,
+      "every": 3,
+      "targets": [
+        "reef",
+        "seagrass",
+        "kelp"
+      ],
+      "catalogue": [
+        37,
+        71,
+        7
+      ]
+    },
+    {
+      "id": "outbreak",
+      "kind": "disease",
+      "behaviour": "hunt",
+      "label": "Sea star wasting disease",
+      "strength": 1,
+      "every": 2,
+      "from": "species",
+      "sources": 3,
+      "hurts": [
+        "bull-kelp",
+        "sunflower-star"
+      ],
+      "catalogue": [
+        37,
+        71,
+        7
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "bull-kelp",
+      "name": "Bull kelp",
+      "habitat": [
+        "kelp"
+      ],
+      "need": 25,
+      "homes": 2
+    },
+    {
+      "id": "sunflower-star",
+      "name": "Sunflower sea star",
+      "habitat": [
+        "ocean",
+        "kelp"
+      ],
+      "need": 48,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant kelp",
+    "defend": "Cool-water refuge",
+    "remove": "Isolate sick stars",
+    "protect": "Kelp reserve",
+    "campaign": "Climate-action campaign"
+  },
+  "realWorld": "Choose sustainable seafood, keep your own emissions down, and support kelp-restoration and sea-star recovery projects along the Pacific coast."
+}

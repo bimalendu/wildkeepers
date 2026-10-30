@@ -1,0 +1,81 @@
+{
+  "id": "gf-high-seas",
+  "title": "30×30 on the High Seas",
+  "blurb": "Much of the ocean lies beyond any country’s borders. Hold the shipping and fishing routes back and win a network of high-seas reserves.",
+  "region": "global-fronts",
+  "theme": "ocean",
+  "issue": "gf-high-seas-issue",
+  "catalogue": [
+    94,
+    38
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 205102,
+  "turns": 11,
+  "energy": 3,
+  "floor": 0.73,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.2,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "network",
+      "kind": "network",
+      "behaviour": "spread",
+      "label": "Industrial shipping and fishing spreading from ports",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        94,
+        38
+      ]
+    },
+    {
+      "id": "demand",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Illegal fleets chasing the animals",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 2,
+      "hurts": [
+        "leatherback"
+      ],
+      "catalogue": [
+        94,
+        38
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "leatherback",
+      "name": "Leatherback turtle",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 31,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Let the sea recover",
+    "defend": "Patrol the zone",
+    "remove": "Close a shipping route",
+    "protect": "High-seas reserve",
+    "campaign": "Treaty-ratification campaign"
+  },
+  "realWorld": "Ask your government to ratify and fund the High Seas Treaty, and choose seafood from fisheries certified as sustainable."
+}

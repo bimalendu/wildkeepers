@@ -1,0 +1,501 @@
+{
+  "id": "middle-east-central-asia",
+  "name": "Middle East & Central Asia",
+  "blurb": "Deserts, steppe and mountains where water is scarce: shrinking seas, overgrazed grassland, wildfires, flaring oil fields and the wild forests where the apple began.",
+  "issues": [
+    {
+      "id": "mc-aral-issue",
+      "title": "The Vanishing Aral Sea",
+      "theme": "freshwater",
+      "tier": 1,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 5,
+        "urgency": 3,
+        "irreversibility": 5,
+        "reach": 3
+      },
+      "catalogue": [
+        35,
+        63
+      ],
+      "drivers": [
+        {
+          "name": "River diversion for cotton irrigation",
+          "catalogue": [
+            35
+          ]
+        },
+        {
+          "name": "Salty, polluted dust from the dry seabed",
+          "catalogue": [
+            63
+          ]
+        },
+        {
+          "name": "Drought on the river sources",
+          "catalogue": [
+            45
+          ]
+        }
+      ],
+      "sites": [
+        "The Amu Darya delta wetlands",
+        "River forest where Bukhara deer live",
+        "The North Aral Sea"
+      ],
+      "fact": {
+        "text": "NASA satellite images show the Aral Sea was already a fraction of its 1960 extent by 2000, after rivers were diverted to farms for cotton and other crops; in 2014 the eastern lobe of the South Aral Sea disappeared completely.",
+        "source": "NASA Earth Observatory, World of Change: Shrinking Aral Sea",
+        "url": "https://science.nasa.gov/earth/earth-observatory/world-of-change/aral-sea/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Check where cotton clothing comes from, prefer products that report water use, and support delta restoration charities.",
+      "mission": "mc-aral"
+    },
+    {
+      "id": "mc-steppe-issue",
+      "title": "The Overgrazed Steppe",
+      "theme": "land",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 4,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        19
+      ],
+      "drivers": [
+        {
+          "name": "Overgrazing as herds grow",
+          "catalogue": [
+            19
+          ]
+        },
+        {
+          "name": "Mines and roads that cut the grassland",
+          "catalogue": [
+            13
+          ]
+        },
+        {
+          "name": "Drier, hotter summers",
+          "catalogue": [
+            45
+          ]
+        }
+      ],
+      "sites": [
+        "A seasonal pasture",
+        "A steppe eagle nesting area",
+        "A herder cooperative"
+      ],
+      "fact": {
+        "text": "A 2014 satellite study in Global Change Biology found that vegetation across Mongolia had declined by about 12% on average, and that about 80% of the decline could be attributed to more livestock; about 70% of the steppe is considered degraded.",
+        "source": "Hilker et al., Global Change Biology (2014)",
+        "url": "https://doi.org/10.1111/gcb.12365",
+        "also": [
+          {
+            "source": "Oregon State University, via ScienceDaily (5 September 2013)",
+            "url": "https://www.sciencedaily.com/releases/2013/09/130905134026.htm"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Buy wool and cashmere with traceable, sustainable-grazing certification and ask brands how they manage herd sizes.",
+      "mission": "mc-steppe"
+    },
+    {
+      "id": "mc-gulf-issue",
+      "title": "Flares over the Gulf",
+      "theme": "pollution",
+      "tier": 1,
+      "driver": "pollution",
+      "priority": {
+        "severity": 3,
+        "urgency": 4,
+        "irreversibility": 3,
+        "reach": 4
+      },
+      "catalogue": [
+        56
+      ],
+      "drivers": [
+        {
+          "name": "Flaring of gas from oil wells",
+          "catalogue": [
+            56
+          ]
+        },
+        {
+          "name": "Oil spills and leaking pipelines",
+          "catalogue": [
+            56
+          ]
+        },
+        {
+          "name": "Weak enforcement of environmental rules",
+          "catalogue": [
+            88
+          ]
+        }
+      ],
+      "sites": [
+        "A coastal salt marsh",
+        "A flamingo roost",
+        "A village beside an oil field"
+      ],
+      "fact": {
+        "text": "The World Bank’s Global Gas Flaring Tracker names Iraq among the nine largest gas-flaring countries in 2024; together they accounted for 83% of all gas flared.",
+        "source": "World Bank, Global Gas Flaring Tracker (2024 data)",
+        "url": "https://www.worldbank.org/en/programs/gasflaringreduction/global-flaring-data",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Cut your own fossil-fuel use where you can, and support groups that track flaring and oil spills with satellite data.",
+      "mission": "mc-gulf"
+    },
+    {
+      "id": "mc-redsea-issue",
+      "title": "A Refuge on the Red Sea",
+      "theme": "ocean",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 4
+      },
+      "catalogue": [
+        8,
+        37
+      ],
+      "drivers": [
+        {
+          "name": "Coastal development and dredging",
+          "catalogue": [
+            8
+          ]
+        },
+        {
+          "name": "Marine heatwaves and bleaching",
+          "catalogue": [
+            37
+          ]
+        },
+        {
+          "name": "Overfishing and lost nets",
+          "catalogue": [
+            23,
+            50
+          ]
+        }
+      ],
+      "sites": [
+        "The Gulf of Aqaba reefs",
+        "A seagrass meadow with dugongs",
+        "A turtle nesting beach"
+      ],
+      "fact": {
+        "text": "Corals in the Gulf of Aqaba endured an exceptional 113-day marine heatwave in 2024, peaking at 32.6°C, and five kinds of coral survived it without bleaching; researchers warn the refuge may be approaching its limit.",
+        "source": "Kochman and Fine, Science of the Total Environment (2025)",
+        "url": "https://doi.org/10.1016/j.scitotenv.2025.180463",
+        "also": [
+          {
+            "source": "Hebrew University press release, via EurekAlert",
+            "url": "https://www.eurekalert.org/news-releases/1098645"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Never touch or stand on coral when diving, and choose dive operators that follow a reef-protection code.",
+      "mission": "mc-redsea"
+    },
+    {
+      "id": "mc-saiga-issue",
+      "title": "The Saiga Die-Off",
+      "theme": "wildlife",
+      "tier": 1,
+      "driver": "invasives",
+      "priority": {
+        "severity": 5,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        73
+      ],
+      "drivers": [
+        {
+          "name": "Pasteurella bacteria turning deadly",
+          "catalogue": [
+            73
+          ]
+        },
+        {
+          "name": "Hot, humid spring weather before outbreaks",
+          "catalogue": [
+            46
+          ]
+        },
+        {
+          "name": "Fences and roads that fragment the range",
+          "catalogue": [
+            11
+          ]
+        }
+      ],
+      "sites": [
+        "A calving ground in central Kazakhstan",
+        "A migration route",
+        "A veterinary monitoring post"
+      ],
+      "fact": {
+        "text": "In 2015 a mass die-off of about 200,000 saiga antelopes in central Kazakhstan was caused primarily by the bacterium Pasteurella multocida serotype B.",
+        "source": "Emerging Infectious Diseases (CDC): “Mass Die-Off of Saiga Antelopes, Kazakhstan, 2015” (2019)",
+        "url": "https://doi.org/10.3201/eid2506.180990",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Support saiga conservation groups, and if you handle livestock or travel to rural areas, follow animal-disease rules on moving animals and reporting sick ones.",
+      "mission": "mc-saiga"
+    },
+    {
+      "id": "mc-fires-issue",
+      "title": "Fire Season in the Pine Forests",
+      "theme": "climate",
+      "tier": 1,
+      "driver": "climate",
+      "priority": {
+        "severity": 4,
+        "urgency": 5,
+        "irreversibility": 3,
+        "reach": 3
+      },
+      "catalogue": [
+        44,
+        45
+      ],
+      "drivers": [
+        {
+          "name": "Heat and drought",
+          "catalogue": [
+            45
+          ]
+        },
+        {
+          "name": "Wildfires",
+          "catalogue": [
+            44
+          ]
+        },
+        {
+          "name": "Clearing and arson at the forest edge",
+          "catalogue": [
+            44
+          ]
+        }
+      ],
+      "sites": [
+        "A coastal pine forest",
+        "A lynx refuge",
+        "A village at the forest edge"
+      ],
+      "fact": {
+        "text": "A 2024 study in Natural Hazards documented Türkiye’s unprecedented 2021 forest fires: 30 large fires affected 164,658 hectares across the Mediterranean, Aegean and Eastern Anatolian regions.",
+        "source": "Remote sensing and GIS-based inventory of the 2021 forest fires in Türkiye, Natural Hazards (2024)",
+        "url": "https://link.springer.com/10.1007/s11069-024-06622-0",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Follow local fire-danger rules and never light fires or throw cigarettes in dry woodland, and support or volunteer with local fire-prevention and reforestation groups.",
+      "mission": "mc-fires"
+    },
+    {
+      "id": "mc-apples-issue",
+      "title": "The Birthplace of the Apple",
+      "theme": "plants",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 5,
+        "reach": 3
+      },
+      "catalogue": [
+        82,
+        2
+      ],
+      "drivers": [
+        {
+          "name": "Land conversion for farms and pastures",
+          "catalogue": [
+            10
+          ]
+        },
+        {
+          "name": "Logging and firewood cutting",
+          "catalogue": [
+            2
+          ]
+        },
+        {
+          "name": "Overgrazing of the forest floor",
+          "catalogue": [
+            19
+          ]
+        }
+      ],
+      "sites": [
+        "A wild apple forest in the Tien Shan",
+        "A seed-collection site",
+        "A village at the forest edge"
+      ],
+      "fact": {
+        "text": "Wild apple forests in the Tian Shan, home of the main wild ancestor of the cultivated apple, are shrinking, mainly because of clearing for housing and farming and deforestation.",
+        "source": "Apples and People, “Fruit of the Heavenly Mountains”",
+        "url": "https://applesandpeople.org.uk/stories/heavenly-mountains/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Choose varied, locally grown apples, support orchards and seed banks that keep old varieties, and back groups protecting wild fruit forests.",
+      "mission": "mc-apples"
+    },
+    {
+      "id": "mc-marshes",
+      "title": "The Mesopotamian Marshes",
+      "theme": "freshwater",
+      "tier": 2,
+      "driver": "indirect",
+      "priority": {
+        "severity": 4,
+        "urgency": 3,
+        "irreversibility": 3,
+        "reach": 3
+      },
+      "catalogue": [
+        92,
+        12
+      ],
+      "drivers": [
+        {
+          "name": "Draining by the Iraqi government after the 1991 Gulf War"
+        }
+      ],
+      "sites": [
+        "The Hawizeh marshes"
+      ]
+    },
+    {
+      "id": "mc-groundwater",
+      "title": "Falling aquifers",
+      "theme": "freshwater",
+      "tier": 2,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 4
+      },
+      "catalogue": [
+        33
+      ],
+      "drivers": [
+        {
+          "name": "Pumping faster than rain refills"
+        },
+        {
+          "name": "Thirsty irrigated crops"
+        }
+      ],
+      "sites": [
+        "A desert oasis"
+      ]
+    },
+    {
+      "id": "mc-falcons",
+      "title": "Falcons and the pet trade",
+      "theme": "wildlife",
+      "tier": 2,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 3,
+        "reach": 3
+      },
+      "catalogue": [
+        31
+      ],
+      "drivers": [
+        {
+          "name": "Illegal capture for falconry"
+        },
+        {
+          "name": "Online trade"
+        }
+      ],
+      "sites": [
+        "A falcon migration route"
+      ]
+    },
+    {
+      "id": "mc-dust",
+      "title": "Salt and dust storms",
+      "theme": "pollution",
+      "tier": 2,
+      "driver": "pollution",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 3,
+        "reach": 3
+      },
+      "catalogue": [
+        17,
+        63
+      ],
+      "drivers": [
+        {
+          "name": "Salty exposed lakebeds"
+        },
+        {
+          "name": "Overgrazed, bare soil"
+        }
+      ],
+      "sites": [
+        "Dry lakebeds in Iran and Iraq"
+      ]
+    },
+    {
+      "id": "mc-pamir-ice",
+      "title": "Pamir and Tien Shan glaciers",
+      "theme": "climate",
+      "tier": 2,
+      "driver": "climate",
+      "priority": {
+        "severity": 4,
+        "urgency": 3,
+        "irreversibility": 5,
+        "reach": 4
+      },
+      "catalogue": [
+        41
+      ],
+      "drivers": [
+        {
+          "name": "Warming melts glaciers"
+        },
+        {
+          "name": "Meltwater floods and later shortages"
+        }
+      ],
+      "sites": [
+        "A glacier-fed valley"
+      ]
+    }
+  ]
+}

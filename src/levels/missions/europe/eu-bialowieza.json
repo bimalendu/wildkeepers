@@ -1,0 +1,78 @@
+{
+  "id": "eu-bialowieza",
+  "title": "The Last Primeval Forest",
+  "blurb": "Białowieża is one of the best-preserved natural forests in Europe, yet logging there broke EU law. Guard it, restore it and make the law count.",
+  "region": "europe",
+  "theme": "land",
+  "issue": "eu-bialowieza-issue",
+  "catalogue": [
+    2
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 218119,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.65,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "road",
+      "farm"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Logging in the old forest",
+      "strength": 2,
+      "from": "edge",
+      "sources": 2,
+      "hurts": [
+        "european-bison"
+      ],
+      "catalogue": [
+        2,
+        88
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Roads and clearing at the edge",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        2,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "european-bison",
+      "name": "European bison",
+      "habitat": [
+        "forest"
+      ],
+      "need": 38,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Forest ranger",
+    "remove": "Block a logging road",
+    "protect": "Strict reserve",
+    "campaign": "Legal campaign"
+  },
+  "realWorld": "Buy wood and paper with FSC certification, support legal and campaigning groups that enforce nature law, and visit primeval forests on guided, low-impact trips."
+}

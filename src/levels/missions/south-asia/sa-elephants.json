@@ -1,0 +1,77 @@
+{
+  "id": "sa-elephants",
+  "title": "Elephants and the Railway",
+  "blurb": "Mines, roads, railways and power lines fragment elephant habitat, and trains and electrocution kill elephants. Reconnect the corridors and make the crossings safe.",
+  "region": "south-asia",
+  "theme": "land",
+  "issue": "sa-elephants-issue",
+  "catalogue": [
+    10,
+    16
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 212119,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.57,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Roads, rail and mines cut the corridors",
+      "strength": 4,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        10,
+        81
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Sand mining and sprawl at the edge",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        10,
+        81
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "asian-elephant",
+      "name": "Asian elephant",
+      "habitat": [
+        "forest"
+      ],
+      "need": 33,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant a corridor",
+    "defend": "Crossing guard",
+    "remove": "Remove a fence or barrier",
+    "protect": "Elephant corridor",
+    "campaign": "Safe-crossings campaign"
+  },
+  "realWorld": "Support groups that secure elephant corridors and fund safe crossings, and choose responsibly sourced sand, stone and building materials where you can."
+}

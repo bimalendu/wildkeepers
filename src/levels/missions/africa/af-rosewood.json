@@ -1,0 +1,81 @@
+{
+  "id": "af-rosewood",
+  "title": "Madagascar’s Rosewood",
+  "blurb": "Illegal loggers cut precious rosewood in Madagascar’s national parks, mostly to sell to China. Guard the last stands.",
+  "region": "africa",
+  "theme": "plants",
+  "issue": "af-rosewood-issue",
+  "catalogue": [
+    2,
+    32
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 199119,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.64,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "road",
+      "farm"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Illegal rosewood loggers",
+      "strength": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "malagasy-rosewood"
+      ],
+      "catalogue": [
+        2,
+        32,
+        88
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Slash-and-burn clearing",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        2,
+        32,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "malagasy-rosewood",
+      "name": "Malagasy rosewood",
+      "habitat": [
+        "forest"
+      ],
+      "need": 37,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Park patrol",
+    "remove": "Block a logging track",
+    "protect": "Community forest",
+    "campaign": "Timber-trade campaign"
+  },
+  "realWorld": "Never buy rosewood or ebony furniture or instruments without legal proof of origin, and ask makers to show it."
+}

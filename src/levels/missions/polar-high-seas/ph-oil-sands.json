@@ -1,0 +1,88 @@
+{
+  "id": "ph-oil-sands",
+  "title": "The Oil Sands and the Boreal",
+  "blurb": "Alberta’s oil sands tailings “ponds” hold about 1.4 trillion litres beside the Athabasca River and are known to leak. Hold the edge, stop the seepage and back Indigenous-led protection.",
+  "region": "polar-high-seas",
+  "theme": "land",
+  "issue": "ph-oil-sands-issue",
+  "catalogue": [
+    22,
+    13
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 216034,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.66,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "mine",
+      "road"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 5,
+    "accent": "wetland",
+    "accentAmount": 0.3
+  },
+  "threats": [
+    {
+      "id": "claims",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Mine leases and cut lines",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        22,
+        13,
+        11
+      ]
+    },
+    {
+      "id": "mercury",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Tailings seepage",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        22,
+        13,
+        11
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "boreal-caribou",
+      "name": "Boreal caribou",
+      "habitat": [
+        "forest"
+      ],
+      "need": 23,
+      "homes": 2
+    }
+  ],
+  "risky": 6,
+  "labels": {
+    "restore": "Restore a seismic line",
+    "defend": "Monitoring patrol",
+    "remove": "Contain a seep",
+    "protect": "Indigenous protected area",
+    "campaign": "Cleanup-liability campaign"
+  },
+  "realWorld": "Support Indigenous-led conservation areas, ask whether your pension or bank funds new extraction projects, and use less fossil fuel where you can."
+}

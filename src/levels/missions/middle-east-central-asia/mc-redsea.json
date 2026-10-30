@@ -1,0 +1,99 @@
+{
+  "id": "mc-redsea",
+  "title": "A Refuge on the Red Sea",
+  "blurb": "Northern Red Sea corals have come through extreme heat without bleaching. Protect the refuge so they can keep it up.",
+  "region": "middle-east-central-asia",
+  "theme": "ocean",
+  "issue": "mc-redsea-issue",
+  "catalogue": [
+    8,
+    37
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 208068,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.81,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.35,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Coastal megaprojects and dredging",
+      "strength": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "dugong"
+      ],
+      "catalogue": [
+        8,
+        37,
+        23,
+        50
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Overfishing and ghost nets",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "hawksbill"
+      ],
+      "catalogue": [
+        8,
+        37,
+        23,
+        50
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "dugong",
+      "name": "Dugong",
+      "habitat": [
+        "ocean",
+        "seagrass"
+      ],
+      "need": 23,
+      "homes": 2
+    },
+    {
+      "id": "hawksbill",
+      "name": "Hawksbill turtle",
+      "habitat": [
+        "ocean",
+        "reef"
+      ],
+      "need": 36,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Regrow coral",
+    "defend": "Reef rangers",
+    "remove": "Haul ghost nets",
+    "protect": "Marine park",
+    "campaign": "Reef-protection campaign"
+  },
+  "realWorld": "Never touch or stand on coral when diving, and choose dive operators that follow a reef-protection code."
+}

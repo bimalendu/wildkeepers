@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ozone",
+    "title": "The ozone layer is healing",
+    "text": "After the Montreal Protocol was signed in September 1987, clear signs have emerged that the ozone layer is beginning to recover. The UN-backed Scientific Assessment of Ozone Depletion, published in October 2026, projects the near-global average back at 1980 values around 2040, and the Antarctic during the 2060s, provided countries keep complying with the treaty.",
+    "cause": "A global treaty, strengthened by amendments over time.",
+    "source": "WMO/UNEP Scientific Assessment of Ozone Depletion: 2026 (October 2026)",
+    "url": "https://ozone.unep.org/sites/default/files/2026-10/OA2026ExecSummary.pdf",
+    "checked": "2026-10-29",
+    "verified": true,
+    "also": [
+      {
+        "source": "UNEP Ozone Secretariat, Final Act of the 1987 Montreal conference",
+        "url": "https://ozone.unep.org/system/files/documents/1987_Montreal-Protocol_Final-Act.E.pdf"
+      }
+    ]
+  },
+  {
+    "id": "humpback",
+    "title": "Humpback whales are recovering",
+    "text": "Most humpback whale stocks have been recovering from whaling since the International Whaling Commission’s moratorium on commercial whaling took effect in the mid-1980s, and the species is listed as Least Concern on the IUCN Red List. Some small subpopulations, such as the one in Oceania, are still listed as Endangered.",
+    "cause": "An international hunting ban that countries kept.",
+    "source": "Frontiers in Marine Science review (2023)",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmars.2023.997491",
+    "checked": "2026-10-29",
+    "verified": true,
+    "also": [
+      {
+        "source": "IUCN Red List press release (12 August 2008)",
+        "url": "https://iucn.org/content/humpback-whale-road-recovery-reveals-iucn-red-list"
+      }
+    ]
+  },
+  {
+    "id": "lynx",
+    "title": "The Iberian lynx pulled back from the brink",
+    "text": "In June 2024 the IUCN moved the Iberian lynx from Endangered to Vulnerable: mature individuals grew from 62 in 2001 to 648 in 2022, and the total population is now estimated at over 2,000.",
+    "cause": "More rabbits to eat, protected and rebuilt scrub and forest, fewer human-caused deaths, and breeding and reintroduction (over 400 lynx released since 2010).",
+    "source": "IUCN press release (20 June 2024)",
+    "url": "https://www.iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list",
+    "checked": "2026-10-29",
+    "verified": true
+  },
+  {
+    "id": "saiga",
+    "title": "The saiga antelope is recovering",
+    "text": "On 11 December 2023 the IUCN moved the saiga from Critically Endangered to Near Threatened. Kazakhstan’s population rose from under 50,000 in 2005 to over 1.9 million.",
+    "cause": "Anti-poaching measures, stronger law enforcement and border control, and major new state protected areas.",
+    "source": "The Astana Times (12 December 2023)",
+    "url": "https://astanatimes.com/2023/12/saiga-antelope-moves-from-critically-endangered-to-near-threatened-category-on-iucn-red-list/",
+    "checked": "2026-10-29",
+    "verified": true,
+    "also": [
+      {
+        "source": "Wildlife Conservation Society press release (12 December 2023)",
+        "url": "https://newsroom.wcs.org/News-Releases/articleType/ArticleView/articleId/21627"
+      }
+    ]
+  },
+  {
+    "id": "panda",
+    "title": "Giant pandas are no longer Endangered",
+    "text": "In 2016 the IUCN moved the giant panda from Endangered to Vulnerable, as surveys showed the wild population had started to increase.",
+    "cause": "A crackdown on poaching, and protecting and restoring panda habitat.",
+    "source": "Al Jazeera (4 September 2016)",
+    "url": "https://www.aljazeera.com/news/2016/9/4/survey-giant-pandas-no-longer-endangered-in-china",
+    "checked": "2026-10-29",
+    "verified": true,
+    "also": [
+      {
+        "source": "National Geographic (4 September 2016)",
+        "url": "https://www.nationalgeographic.com/animals/article/pandas-vulnerable-endangered-species"
+      }
+    ]
+  },
+  {
+    "id": "eagle",
+    "title": "The bald eagle came back from DDT",
+    "text": "Bald eagles in the lower 48 states fell to an all-time low of 417 breeding pairs in 1963, mainly because the pesticide DDT weakened their eggshells. By 2007 there were 9,789 pairs, and the Interior Department announced the bird’s removal from the endangered species list.",
+    "cause": "Ending the DDT threat and legal protection for the birds.",
+    "source": "US Fish and Wildlife Service (June 2007)",
+    "url": "https://www.fws.gov/story/2007-06/bald-eagle-soars-endangered-species-list-secretary-kempthorne-eagle-has-returned",
+    "checked": "2026-10-29",
+    "verified": true
+  }
+]

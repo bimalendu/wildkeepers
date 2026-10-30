@@ -1,0 +1,81 @@
+{
+  "id": "mc-apples",
+  "title": "The Birthplace of the Apple",
+  "blurb": "The wild forests of the Tien Shan hold the main wild ancestor of the apples we eat. Guard them from housing and clearing.",
+  "region": "middle-east-central-asia",
+  "theme": "plants",
+  "issue": "mc-apples-issue",
+  "catalogue": [
+    82,
+    2
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 208119,
+  "turns": 16,
+  "energy": 3,
+  "floor": 0.67,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "road",
+      "farm"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Cutting for firewood and timber",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "wild-apple"
+      ],
+      "catalogue": [
+        10,
+        2,
+        19
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Housing and farms replace the forest",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        10,
+        2,
+        19
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "wild-apple",
+      "name": "Wild apple (Malus sieversii)",
+      "habitat": [
+        "forest"
+      ],
+      "need": 39,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Forest ranger",
+    "remove": "Block a logging track",
+    "protect": "Gene-bank forest",
+    "campaign": "Heritage-forest campaign"
+  },
+  "realWorld": "Choose varied, locally grown apples, support orchards and seed banks that keep old varieties, and back groups protecting wild fruit forests."
+}

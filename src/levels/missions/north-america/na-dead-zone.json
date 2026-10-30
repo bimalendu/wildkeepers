@@ -1,0 +1,90 @@
+{
+  "id": "na-dead-zone",
+  "title": "The Gulf’s Dead Zone",
+  "blurb": "Nutrient runoff from the Mississippi basin starves the Gulf of oxygen each summer. Buffer the farms, clean the river and win a nutrient-cut law.",
+  "region": "north-america",
+  "theme": "freshwater",
+  "issue": "na-dead-zone-issue",
+  "catalogue": [
+    51
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 207085,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.69,
+  "map": {
+    "base": "wetland",
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Fertiliser runoff",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        51,
+        4,
+        58
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Sewage and manure inflows",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "river",
+        "lake",
+        "wetland"
+      ],
+      "catalogue": [
+        51,
+        4,
+        58
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "blue-crab",
+      "name": "Blue crab",
+      "habitat": [
+        "river"
+      ],
+      "need": 7,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rebuild wetland",
+    "defend": "Cover crops",
+    "remove": "Clean up a spill",
+    "protect": "Riverside buffer",
+    "campaign": "Nutrient-cut campaign"
+  },
+  "realWorld": "Use less fertiliser on lawns and gardens, buy from farms that use cover crops and buffer strips, and support groups restoring wetlands along rivers."
+}

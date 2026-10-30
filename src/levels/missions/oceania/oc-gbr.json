@@ -1,0 +1,87 @@
+{
+  "id": "oc-gbr",
+  "title": "The Great Barrier Reef’s Heatwaves",
+  "blurb": "Heat stress has bleached the reef hard in recent years, though it partly recovered in 2026. The arrows show which reefs will cook: shade them, fight the outbreaks and win the climate case.",
+  "region": "oceania",
+  "theme": "ocean",
+  "issue": "oc-gbr-issue",
+  "catalogue": [
+    37,
+    8
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 210017,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.74,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.4,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "heatwave",
+      "kind": "heat",
+      "behaviour": "strike",
+      "label": "Marine heatwave",
+      "strength": 4,
+      "start": 3,
+      "every": 3,
+      "targets": [
+        "reef",
+        "seagrass",
+        "kelp"
+      ],
+      "catalogue": [
+        37,
+        8
+      ]
+    },
+    {
+      "id": "outbreak",
+      "kind": "disease",
+      "behaviour": "hunt",
+      "label": "Crown-of-thorns starfish outbreak",
+      "strength": 1,
+      "every": 2,
+      "from": "species",
+      "sources": 3,
+      "hurts": [
+        "green-turtle-gbr"
+      ],
+      "catalogue": [
+        37,
+        8
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "green-turtle-gbr",
+      "name": "Green turtle",
+      "habitat": [
+        "ocean",
+        "reef"
+      ],
+      "need": 35,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Regrow coral",
+    "defend": "Shade and cool",
+    "remove": "Control an outbreak",
+    "protect": "Marine park",
+    "campaign": "Climate-action campaign"
+  },
+  "realWorld": "Cut your own emissions where you can, use reef-safe sunscreen, and never touch or stand on coral when snorkelling or diving."
+}

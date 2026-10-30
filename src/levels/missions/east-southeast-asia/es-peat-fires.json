@@ -1,0 +1,104 @@
+{
+  "id": "es-peat-fires",
+  "title": "Peat Fires and Haze",
+  "blurb": "Drained peatlands burn and blanket a whole region in haze. Cut firebreaks, put out the flames and protect the peat.",
+  "region": "east-southeast-asia",
+  "theme": "climate",
+  "issue": "es-peat-fires-issue",
+  "catalogue": [
+    44,
+    59
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 216034,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.6,
+  "map": {
+    "base": "forest",
+    "accent": "wetland",
+    "accentAmount": 0.3,
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "w",
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "fire",
+      "kind": "fire",
+      "behaviour": "spread",
+      "label": "Peat and forest fires",
+      "strength": 4,
+      "dir": 0,
+      "lifetime": 2,
+      "from": "random",
+      "catalogue": [
+        44,
+        59
+      ]
+    },
+    {
+      "id": "conversion",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Drainage and clearing for plantations",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        44,
+        59
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "sumatran-tiger",
+      "name": "Sumatran tiger",
+      "habitat": [
+        "forest",
+        "wetland"
+      ],
+      "need": 27,
+      "homes": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "dry1",
+      "turn": 3,
+      "title": "A dry spell",
+      "text": "Weeks without rain. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    },
+    {
+      "id": "dry2",
+      "turn": 7,
+      "title": "Heat wave",
+      "text": "Record temperatures dry out the vegetation again. The fire spreads one tile further this turn.",
+      "effect": {
+        "kind": "surge",
+        "threat": "fire",
+        "amount": 1
+      }
+    }
+  ],
+  "labels": {
+    "restore": "Rewet the peat",
+    "defend": "Canal block",
+    "remove": "Put out fire",
+    "protect": "Peat reserve",
+    "campaign": "No-burning campaign"
+  },
+  "realWorld": "Choose products with deforestation-free and no-burning palm oil and paper supply chains, and support groups that rewet and restore drained peatland."
+}

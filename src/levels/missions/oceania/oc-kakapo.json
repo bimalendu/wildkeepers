@@ -1,0 +1,78 @@
+{
+  "id": "oc-kakapo",
+  "title": "The Kākāpō Comeback",
+  "blurb": "The world’s heaviest parrot was nearly lost to stoats, rats and cats. Guard the predator-free islands and keep the forest healthy.",
+  "region": "oceania",
+  "theme": "wildlife",
+  "issue": "oc-kakapo-issue",
+  "catalogue": [
+    64
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 210051,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.69,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "road",
+      "farm"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Stoats, rats and cats",
+      "strength": 2,
+      "from": "edge",
+      "sources": 2,
+      "hurts": [
+        "kakapo"
+      ],
+      "catalogue": [
+        64,
+        72
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Forest loss and fragmentation",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        64,
+        72
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "kakapo",
+      "name": "Kākāpō",
+      "habitat": [
+        "forest"
+      ],
+      "need": 36,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Predator trap line",
+    "remove": "Remove a predator",
+    "protect": "Predator-free island",
+    "campaign": "Biosecurity campaign"
+  },
+  "realWorld": "Keep cats indoors, follow biosecurity checks when travelling to islands and wild places, and support predator-control and conservation-breeding groups."
+}

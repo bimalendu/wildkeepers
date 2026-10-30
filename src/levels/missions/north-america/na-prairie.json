@@ -1,0 +1,80 @@
+{
+  "id": "na-prairie",
+  "title": "The Vanishing Prairie",
+  "blurb": "Every year farmers convert native grassland to cropland. Hold the edge and restore the prairie.",
+  "region": "north-america",
+  "theme": "land",
+  "issue": "na-prairie-issue",
+  "catalogue": [
+    3
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 207017,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.56,
+  "map": {
+    "base": "grass",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6,
+    "accent": "wetland",
+    "accentAmount": 0.2
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Plowing for row crops",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        3,
+        11,
+        21
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "New roads and oil pads",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        3,
+        11,
+        21
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "prairie-dog",
+      "name": "Black-tailed prairie dog",
+      "habitat": [
+        "grass"
+      ],
+      "need": 26,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Reseed native grass",
+    "defend": "Grassland easement",
+    "remove": "Stop a plow-up",
+    "protect": "Conservation title",
+    "campaign": "Sodsaver campaign"
+  },
+  "realWorld": "Choose beef from ranchers who keep native grass, support land trusts that buy conservation easements, and ask what your local farm bill does for grassland."
+}

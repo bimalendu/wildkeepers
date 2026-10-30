@@ -1,0 +1,98 @@
+{
+  "id": "af-fleets",
+  "title": "Pirate Fishing off West Africa",
+  "blurb": "Illegal and unreported fishing takes far more fish from West African waters than the official figures show. Patrol, enforce and campaign for the fishers who live there.",
+  "region": "africa",
+  "theme": "ocean",
+  "issue": "af-fleets-issue",
+  "catalogue": [
+    24,
+    88,
+    23
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 199102,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.8,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.35,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Illegal industrial trawlers",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "humpback-dolphin"
+      ],
+      "catalogue": [
+        24,
+        23,
+        88
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Bycatch of turtles and dolphins",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "green-turtle"
+      ],
+      "catalogue": [
+        24,
+        23,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "humpback-dolphin",
+      "name": "Atlantic humpback dolphin",
+      "habitat": [
+        "ocean",
+        "reef"
+      ],
+      "need": 42,
+      "homes": 2
+    },
+    {
+      "id": "green-turtle",
+      "name": "Green turtle",
+      "habitat": [
+        "ocean",
+        "reef"
+      ],
+      "need": 42,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Restore the seabed",
+    "defend": "Coastal patrol",
+    "remove": "Haul in illegal nets",
+    "protect": "Marine reserve",
+    "campaign": "Fishing-rules campaign"
+  },
+  "realWorld": "Choose seafood with credible sustainability certification (such as MSC), ask where it was caught, and support organisations that publish vessel-tracking data on illegal fishing."
+}

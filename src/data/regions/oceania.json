@@ -1,0 +1,479 @@
+{
+  "id": "oceania",
+  "name": "Oceania",
+  "blurb": "Reef, forest and island: home to the kākāpō, kauri, koala and the Great Barrier Reef, hit by heat stress, mega-fires, drifting nets and the predators and diseases people brought with them.",
+  "issues": [
+    {
+      "id": "oc-gbr-issue",
+      "title": "The Great Barrier Reef’s Heatwaves",
+      "theme": "ocean",
+      "tier": 1,
+      "driver": "climate",
+      "priority": {
+        "severity": 5,
+        "urgency": 5,
+        "irreversibility": 4,
+        "reach": 5
+      },
+      "catalogue": [
+        37,
+        8
+      ],
+      "drivers": [
+        {
+          "name": "Marine heatwaves and bleaching",
+          "catalogue": [
+            37
+          ]
+        },
+        {
+          "name": "Crown-of-thorns starfish outbreaks",
+          "catalogue": [
+            8
+          ]
+        },
+        {
+          "name": "Runoff and coastal development",
+          "catalogue": [
+            8
+          ]
+        }
+      ],
+      "sites": [
+        "The northern Great Barrier Reef",
+        "A turtle nesting island",
+        "A coral nursery"
+      ],
+      "fact": {
+        "text": "The Australian Institute of Marine Science’s 2025/26 survey (released 11 August 2026) found hard coral cover on the Great Barrier Reef rose from 30.0% to 35.1% in the northern region and from 28.6% to 31.6% in the central region, and slipped from 26.9% to 26.4% in the south.",
+        "source": "Australian Institute of Marine Science, Long Term Monitoring Program annual summary 2025/26, via the Global Coral Reef Monitoring Network",
+        "url": "https://gcrmn.net/2026/08/11/aims-ltm-25-26/",
+        "also": [
+          {
+            "source": "GKToday (14 August 2026), on the AIMS report",
+            "url": "https://www.gktoday.in/great-barrier-reef-coral-cover-rebounds-to-35-1/"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Cut your own emissions where you can, use reef-safe sunscreen, and never touch or stand on coral when snorkelling or diving.",
+      "mission": "oc-gbr"
+    },
+    {
+      "id": "oc-ghost-nets-issue",
+      "title": "Ghost Nets of the Gulf",
+      "theme": "pollution",
+      "tier": 1,
+      "driver": "pollution",
+      "priority": {
+        "severity": 3,
+        "urgency": 4,
+        "irreversibility": 3,
+        "reach": 3
+      },
+      "catalogue": [
+        50
+      ],
+      "drivers": [
+        {
+          "name": "Lost and abandoned fishing nets",
+          "catalogue": [
+            50
+          ]
+        },
+        {
+          "name": "Nets drifting in from the Arafura and Timor seas",
+          "catalogue": [
+            24
+          ]
+        },
+        {
+          "name": "Slow recovery from remote beaches",
+          "catalogue": [
+            50
+          ]
+        }
+      ],
+      "sites": [
+        "A turtle nesting beach",
+        "A seagrass bed with dugongs",
+        "A remote Indigenous ranger coast"
+      ],
+      "fact": {
+        "text": "Parks Australia says Indigenous rangers from 24 ranger groups have removed more than 950 ghost nets and 180 tonnes of marine debris from beaches across northern Australia, nets that pose a serious threat to turtles and dugongs.",
+        "source": "Parks Australia (13 January 2026), Ghost Nets Initiative",
+        "url": "https://parksaustralia.gov.au/news/boosting-ocean-health-extending-ghost-nets-initiative/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Dispose of fishing line and gear properly, choose seafood from fisheries that mark and recover their gear, and support Indigenous ranger ghost-net programmes.",
+      "mission": "oc-ghost-nets"
+    },
+    {
+      "id": "oc-kakapo-issue",
+      "title": "The Kākāpō Comeback",
+      "theme": "wildlife",
+      "tier": 1,
+      "driver": "invasives",
+      "priority": {
+        "severity": 5,
+        "urgency": 3,
+        "irreversibility": 5,
+        "reach": 2
+      },
+      "catalogue": [
+        64
+      ],
+      "drivers": [
+        {
+          "name": "Stoats, rats and cats",
+          "catalogue": [
+            64
+          ]
+        },
+        {
+          "name": "Low genetic diversity in a tiny population",
+          "catalogue": [
+            64
+          ]
+        },
+        {
+          "name": "Too few predator-free islands",
+          "catalogue": [
+            72
+          ]
+        }
+      ],
+      "sites": [
+        "A predator-free island",
+        "A rimu fruiting forest",
+        "A breeding-season nest site"
+      ],
+      "fact": {
+        "text": "New Zealand’s Department of Conservation reported a recovery-era high of 325 kākāpō on 1 September 2026, after the recovery programme began in 1995 with just 51 birds, only 20 of them female.",
+        "source": "New Zealand Department of Conservation media release (September 2026)",
+        "url": "https://www.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Keep cats indoors, follow biosecurity checks when travelling to islands and wild places, and support predator-control and conservation-breeding groups.",
+      "mission": "oc-kakapo"
+    },
+    {
+      "id": "oc-kauri-issue",
+      "title": "Kauri Dieback",
+      "theme": "plants",
+      "tier": 1,
+      "driver": "invasives",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 5,
+        "reach": 2
+      },
+      "catalogue": [
+        67
+      ],
+      "drivers": [
+        {
+          "name": "The soil-borne pathogen Phytophthora agathidicida",
+          "catalogue": [
+            67
+          ]
+        },
+        {
+          "name": "Soil carried on boots, tyres and animals",
+          "catalogue": [
+            67
+          ]
+        },
+        {
+          "name": "Clearing and track damage near roots",
+          "catalogue": [
+            1
+          ]
+        }
+      ],
+      "sites": [
+        "A giant kauri forest",
+        "A track with a wash station",
+        "An iwi-led protection area"
+      ],
+      "fact": {
+        "text": "The Department of Conservation says kauri dieback is caused by a soil-borne pathogen that is easily spread through soil on footwear, animals, equipment and vehicles, that there is no known cure, and that kauri forests once covered 1.2 million hectares.",
+        "source": "New Zealand Department of Conservation, kauri dieback",
+        "url": "https://www.doc.govt.nz/nature/pests-and-threats/diseases/kauri-dieback/",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Clean your boots and gear at wash stations, stay on the tracks and obey closures in kauri forest, and report sick kauri to the Department of Conservation or Tiakina Kauri.",
+      "mission": "oc-kauri"
+    },
+    {
+      "id": "oc-murray-darling-issue",
+      "title": "The Murray–Darling Rivers",
+      "theme": "freshwater",
+      "tier": 1,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        35,
+        63
+      ],
+      "drivers": [
+        {
+          "name": "Irrigation extraction",
+          "catalogue": [
+            35
+          ]
+        },
+        {
+          "name": "Salt build-up in soils and rivers",
+          "catalogue": [
+            63
+          ]
+        },
+        {
+          "name": "Drought and heat",
+          "catalogue": [
+            45
+          ]
+        }
+      ],
+      "sites": [
+        "The Menindee Lakes",
+        "A river red gum floodplain",
+        "A Murray cod spawning reach"
+      ],
+      "fact": {
+        "text": "An Australian Academy of Science panel investigating three major fish kills in the Darling River near Menindee in December 2018 and January 2019, the last killing millions of fish, found that oxygen-depleted bottom water mixing into the surface layer was the immediate cause and insufficient flows the fundamental one; the panel’s chair said rainfall and river-flow data pointed to excess upstream extraction as well as drought.",
+        "source": "Australian Academy of Science, Investigation of the causes of mass fish kills in the Menindee Region NSW over the summer of 2018–2019 (14 February 2019)",
+        "url": "https://science.org.au/node/3025",
+        "also": [
+          {
+            "source": "ANU Centre for Biodiversity Analysis (18 February 2019), on the panel’s findings",
+            "url": "https://cba.anu.edu.au/news-events/news/cba-director-chairs-aas-report-darling-river-fish-kills"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Choose less water-hungry foods and cotton products where you can, and support environmental-water and river-restoration groups.",
+      "mission": "oc-murray-darling"
+    },
+    {
+      "id": "oc-black-summer-issue",
+      "title": "Black Summer Fires",
+      "theme": "climate",
+      "tier": 1,
+      "driver": "climate",
+      "priority": {
+        "severity": 5,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 4
+      },
+      "catalogue": [
+        44,
+        45
+      ],
+      "drivers": [
+        {
+          "name": "Drought and extreme heat",
+          "catalogue": [
+            45
+          ]
+        },
+        {
+          "name": "Mega-fires",
+          "catalogue": [
+            44
+          ]
+        }
+      ],
+      "sites": [
+        "A mountain forest",
+        "An unburnt gully refuge",
+        "A wildlife rescue site"
+      ],
+      "fact": {
+        "text": "A University of Sydney-led report for WWF-Australia estimated that about 3 billion animals were impacted by the 2019–20 Black Summer fires, including about 143 million mammals and more than 60,000 koalas.",
+        "source": "University of Sydney, report commissioned by WWF-Australia (December 2020)",
+        "url": "https://www.sydney.edu.au/news-opinion/news/2020/12/07/3-billion-animals-impacted-by-fires-including-60000-koalas-repor.html",
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Follow fire-danger rules, prepare a bushfire plan if you live near bush, and support wildlife rescue and habitat-recovery groups.",
+      "mission": "oc-black-summer"
+    },
+    {
+      "id": "oc-koalas-issue",
+      "title": "Koalas and the Bulldozers",
+      "theme": "land",
+      "tier": 1,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        1,
+        10
+      ],
+      "drivers": [
+        {
+          "name": "Clearing for housing and farming",
+          "catalogue": [
+            1
+          ]
+        },
+        {
+          "name": "Disease in koala populations",
+          "catalogue": [
+            10
+          ]
+        },
+        {
+          "name": "Climate change",
+          "catalogue": [
+            88
+          ]
+        }
+      ],
+      "sites": [
+        "A koala corridor",
+        "A eucalypt forest edge",
+        "A koala hospital"
+      ],
+      "fact": {
+        "text": "In February 2022 koalas in New South Wales, Queensland and the ACT were listed as endangered under Australia’s national environment law, up from vulnerable.",
+        "source": "Herbert Smith Freehills Kramer (14 February 2022), on the federal koala listing",
+        "url": "https://www.mondaq.com:443/australia/environmental-law/1161008/federal-koala-listing-for-qld-nsw-and-act-upgraded-to-endangered",
+        "also": [
+          {
+            "source": "Environmental Defenders Office, on the koala uplisting",
+            "url": "https://edo.org.au/?p=5434"
+          },
+          {
+            "source": "RNZ (11 February 2022), reporting the listing",
+            "url": "https://www.rnz.co.nz/news/world/461346/koalas-now-considered-endangered-in-nsw-queensland-and-the-act"
+          }
+        ],
+        "checked": "2026-10-29"
+      },
+      "realWorld": "Support groups that buy and protect koala habitat, slow down on koala-crossing roads, and ask local councils how they protect bushland.",
+      "mission": "oc-koalas"
+    },
+    {
+      "id": "oc-seagrass",
+      "title": "Seagrass meadows",
+      "theme": "ocean",
+      "tier": 2,
+      "driver": "land-sea-use",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 3
+      },
+      "catalogue": [
+        6
+      ],
+      "drivers": [
+        {
+          "name": "Dredging and coastal development"
+        },
+        {
+          "name": "Marine heatwaves"
+        }
+      ],
+      "sites": [
+        "A seagrass meadow"
+      ]
+    },
+    {
+      "id": "oc-atolls",
+      "title": "Rising seas and Pacific atolls",
+      "theme": "climate",
+      "tier": 2,
+      "driver": "climate",
+      "priority": {
+        "severity": 4,
+        "urgency": 4,
+        "irreversibility": 5,
+        "reach": 3
+      },
+      "catalogue": [
+        43
+      ],
+      "drivers": [
+        {
+          "name": "Sea-level rise"
+        },
+        {
+          "name": "Saltwater in freshwater lenses"
+        }
+      ],
+      "sites": [
+        "A low coral island"
+      ]
+    },
+    {
+      "id": "oc-kelp",
+      "title": "Giant kelp forests of Tasmania",
+      "theme": "ocean",
+      "tier": 2,
+      "driver": "climate",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 4,
+        "reach": 2
+      },
+      "catalogue": [
+        7
+      ],
+      "drivers": [
+        {
+          "name": "Warming seas"
+        },
+        {
+          "name": "Urchin barrens"
+        }
+      ],
+      "sites": [
+        "A kelp forest"
+      ]
+    },
+    {
+      "id": "oc-tuna",
+      "title": "Pacific tuna",
+      "theme": "ocean",
+      "tier": 2,
+      "driver": "exploitation",
+      "priority": {
+        "severity": 3,
+        "urgency": 3,
+        "irreversibility": 3,
+        "reach": 4
+      },
+      "catalogue": [
+        23,
+        24
+      ],
+      "drivers": [
+        {
+          "name": "Industrial purse-seine fleets"
+        },
+        {
+          "name": "Illegal fishing"
+        }
+      ],
+      "sites": [
+        "A tuna fishing ground"
+      ]
+    }
+  ]
+}

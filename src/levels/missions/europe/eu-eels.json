@@ -1,0 +1,84 @@
+{
+  "id": "eu-eels",
+  "title": "The Glass Eel Trade",
+  "blurb": "Baby eels are smuggled out of Europe to Asia, while dams and pumping stations block the rivers they need. Patrol the rivers, open the barriers and break the trade.",
+  "region": "europe",
+  "theme": "freshwater",
+  "issue": "eu-eels-issue",
+  "catalogue": [
+    76,
+    12
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 218017,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.67,
+  "map": {
+    "base": "wetland",
+    "pressure": [
+      "town",
+      "road"
+    ],
+    "side": "n",
+    "depth": 5,
+    "accent": "forest",
+    "accentAmount": 0.25,
+    "river": true
+  },
+  "threats": [
+    {
+      "id": "loggers",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Glass-eel smugglers",
+      "strength": 2,
+      "from": "edge",
+      "sources": 2,
+      "hurts": [
+        "european-eel"
+      ],
+      "catalogue": [
+        76,
+        12,
+        88
+      ]
+    },
+    {
+      "id": "clearing",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Dams and weirs block the rivers",
+      "strength": 1,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        76,
+        12,
+        88
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "european-eel",
+      "name": "European eel",
+      "habitat": [
+        "river"
+      ],
+      "need": 4,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Rewet",
+    "defend": "River patrol",
+    "remove": "Seize a catch",
+    "protect": "Eel sanctuary",
+    "campaign": "Trade-crackdown campaign"
+  },
+  "realWorld": "Do not buy eel or unagi unless you know it is legal and sustainable, and support groups that remove dams and barriers from rivers."
+}

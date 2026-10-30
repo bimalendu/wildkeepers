@@ -1,0 +1,89 @@
+{
+  "id": "sa-vultures",
+  "title": "The Vulture Crisis",
+  "blurb": "A livestock painkiller, diclofenac, helped wipe out more than 98% of South Asia’s Gyps vultures. Take the poison out of the carcasses and give the survivors safe ground.",
+  "region": "south-asia",
+  "theme": "wildlife",
+  "issue": "sa-vultures-issue",
+  "catalogue": [
+    53,
+    77
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 212017,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.71,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.25,
+    "pressure": [
+      "farm"
+    ],
+    "side": "n",
+    "river": true,
+    "depth": 4
+  },
+  "threats": [
+    {
+      "id": "poison",
+      "kind": "accumulation",
+      "behaviour": "flow",
+      "label": "Diclofenac in livestock carcasses",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "forest",
+        "grass",
+        "river"
+      ],
+      "catalogue": [
+        53,
+        77
+      ]
+    },
+    {
+      "id": "runoff",
+      "kind": "plume",
+      "behaviour": "flow",
+      "label": "Other harmful veterinary drugs",
+      "strength": 1,
+      "from": "river",
+      "sources": 1,
+      "dir": 5,
+      "targets": [
+        "forest",
+        "grass",
+        "river"
+      ],
+      "catalogue": [
+        53,
+        77
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "white-rumped-vulture",
+      "name": "White-rumped vulture",
+      "habitat": [
+        "forest"
+      ],
+      "need": 23,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant nesting trees",
+    "defend": "Safe feeding site",
+    "remove": "Remove tainted carcasses",
+    "protect": "Vulture safe zone",
+    "campaign": "Drug-ban campaign"
+  },
+  "realWorld": "Never give pets or livestock medicines that are harmful to wildlife, return unused medicines to a pharmacy take-back scheme, and support vulture conservation groups."
+}

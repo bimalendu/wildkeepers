@@ -1,0 +1,84 @@
+{
+  "id": "af-sahel",
+  "title": "The Sahel Under Pressure",
+  "blurb": "Degraded land is spreading across the Sahel. Restore the land and back the farmers and herders who live on it.",
+  "region": "africa",
+  "theme": "climate",
+  "issue": "af-sahel-issue",
+  "catalogue": [
+    17,
+    19,
+    34
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 199051,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.6,
+  "map": {
+    "base": "grass",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "s",
+    "depth": 6,
+    "accent": "desert",
+    "accentAmount": 0.3
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Overgrazing and clearing",
+      "strength": 2,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        45,
+        19,
+        34,
+        17
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Fuelwood cutting",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        45,
+        19,
+        34,
+        17
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "dama-gazelle",
+      "name": "Dama gazelle",
+      "habitat": [
+        "grass"
+      ],
+      "need": 19,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Plant and sow",
+    "defend": "Fence and guard",
+    "remove": "Stop the clearing",
+    "protect": "Community land",
+    "campaign": "Land-rights campaign"
+  },
+  "realWorld": "Support farmer-managed land restoration and the Great Green Wall through reputable charities, and choose charcoal and fuel from sustainable sources where you can."
+}

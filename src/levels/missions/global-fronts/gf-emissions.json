@@ -1,0 +1,86 @@
+{
+  "id": "gf-emissions",
+  "title": "The Carbon Budget",
+  "blurb": "Emissions follow the supply chains of fossil energy and keep warming the climate. Shut the routes, restore the sinks and win the policy case.",
+  "region": "global-fronts",
+  "theme": "climate",
+  "issue": "gf-emissions-issue",
+  "catalogue": [
+    36,
+    48,
+    47
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 205017,
+  "turns": 14,
+  "energy": 4,
+  "floor": 0.56,
+  "map": {
+    "base": "forest",
+    "accent": "grass",
+    "accentAmount": 0.25,
+    "pressure": [
+      "town",
+      "road",
+      "mine"
+    ],
+    "side": "n",
+    "depth": 5
+  },
+  "threats": [
+    {
+      "id": "network",
+      "kind": "network",
+      "behaviour": "spread",
+      "label": "Emissions spreading along fossil supply chains",
+      "strength": 4,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        36,
+        48,
+        47
+      ]
+    },
+    {
+      "id": "demand",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Heat and fire reaching the refuges",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "forest-elephant"
+      ],
+      "catalogue": [
+        36,
+        48,
+        47
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "forest-elephant",
+      "name": "Forest elephant",
+      "habitat": [
+        "forest"
+      ],
+      "need": 20,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Restore a carbon sink",
+    "defend": "Efficiency standard",
+    "remove": "Close a coal plant",
+    "protect": "Carbon-sink reserve",
+    "campaign": "Climate-policy campaign"
+  },
+  "realWorld": "Cut the energy you use at home and when you travel, back policies that phase out fossil fuels, and ask where your bank and pension invest."
+}

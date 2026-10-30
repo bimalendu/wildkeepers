@@ -1,0 +1,87 @@
+{
+  "id": "ph-permafrost",
+  "title": "The Thawing Ground",
+  "blurb": "Frozen Arctic ground holds vast stores of carbon. As it thaws, microbes release carbon dioxide and methane. Keep the ground frozen and the tundra whole.",
+  "region": "polar-high-seas",
+  "theme": "climate",
+  "issue": "ph-permafrost-issue",
+  "catalogue": [
+    42
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 216102,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.54,
+  "map": {
+    "base": "tundra",
+    "pressure": [
+      "lake"
+    ],
+    "side": "s",
+    "depth": 5,
+    "accent": "wetland",
+    "accentAmount": 0.2
+  },
+  "threats": [
+    {
+      "id": "thaw",
+      "kind": "thaw",
+      "behaviour": "spread",
+      "label": "Spreading thaw ponds",
+      "strength": 4,
+      "from": "pressure",
+      "sources": 3,
+      "targets": [
+        "ice",
+        "tundra",
+        "wetland"
+      ],
+      "catalogue": [
+        36,
+        42
+      ]
+    },
+    {
+      "id": "pulse",
+      "kind": "thaw",
+      "behaviour": "spread",
+      "label": "Warm-spell thaw",
+      "strength": 2,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "targets": [
+        "ice",
+        "tundra",
+        "wetland"
+      ],
+      "catalogue": [
+        36,
+        42
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "tundra-caribou",
+      "name": "Caribou",
+      "habitat": [
+        "tundra"
+      ],
+      "need": 25,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Re-vegetate the tundra",
+    "defend": "Insulate the ground",
+    "remove": "Drain a thaw pond",
+    "protect": "Tundra reserve",
+    "campaign": "Emissions campaign"
+  },
+  "realWorld": "Cutting your own carbon emissions and backing policies that cut them is the main lever, since thaw releases carbon dioxide and methane."
+}

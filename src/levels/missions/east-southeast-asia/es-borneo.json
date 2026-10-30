@@ -1,0 +1,81 @@
+{
+  "id": "es-borneo",
+  "title": "The Orangutan Forests of Borneo",
+  "blurb": "Logging and industrial plantations are clearing Borneo’s rainforest. Hold the edge and keep the orangutans’ forest connected.",
+  "region": "east-southeast-asia",
+  "theme": "land",
+  "issue": "es-borneo-issue",
+  "catalogue": [
+    1,
+    2
+  ],
+  "size": [
+    8,
+    9
+  ],
+  "seed": 216017,
+  "turns": 14,
+  "energy": 3,
+  "floor": 0.56,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Oil palm and pulp expansion",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        1,
+        2,
+        13,
+        81
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Logging and mining roads",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        1,
+        2,
+        13,
+        81
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "bornean-orangutan",
+      "name": "Bornean orangutan",
+      "habitat": [
+        "forest"
+      ],
+      "need": 25,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Patrol",
+    "remove": "Clear the road",
+    "protect": "Land title",
+    "campaign": "Supply-chain campaign"
+  },
+  "realWorld": "Choose products with credible certified-sustainable palm oil and paper, check labels for deforestation-free claims, and support orangutan and forest-protection groups."
+}

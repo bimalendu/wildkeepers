@@ -1,0 +1,99 @@
+{
+  "id": "la-humboldt",
+  "title": "Fleets off the Galápagos",
+  "blurb": "Distant-water fleets work the waters off the Galápagos reserve. Enforce, campaign and protect.",
+  "region": "latin-america",
+  "theme": "ocean",
+  "issue": "la-humboldt-issue",
+  "catalogue": [
+    23,
+    24,
+    25
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 205085,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.78,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.35,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Distant-water fishing fleet",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "hammerhead"
+      ],
+      "catalogue": [
+        23,
+        24,
+        88,
+        25
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Longline bycatch",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "fur-seal"
+      ],
+      "catalogue": [
+        23,
+        24,
+        88,
+        25
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "hammerhead",
+      "name": "Scalloped hammerhead shark",
+      "habitat": [
+        "ocean",
+        "reef"
+      ],
+      "need": 46,
+      "homes": 2
+    },
+    {
+      "id": "fur-seal",
+      "name": "Galápagos fur seal",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 29,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Regrow coral",
+    "defend": "Patrol boats",
+    "remove": "Haul nets",
+    "protect": "Marine reserve",
+    "campaign": "Fishing-rules campaign"
+  },
+  "realWorld": "Choose seafood with credible sustainability certification (such as MSC) or from a local guide such as a national seafood-sustainability list, and ask where it was caught."
+}

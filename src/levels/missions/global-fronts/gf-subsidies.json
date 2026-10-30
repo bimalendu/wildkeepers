@@ -1,0 +1,80 @@
+{
+  "id": "gf-subsidies",
+  "title": "Paying for the Damage",
+  "blurb": "Public money props up fossil fuels and harmful fishing. Cut the subsidies and expose the false green claims.",
+  "region": "global-fronts",
+  "theme": "land",
+  "issue": "gf-subsidies-issue",
+  "catalogue": [
+    87,
+    89
+  ],
+  "size": [
+    9,
+    10
+  ],
+  "seed": 205085,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.6,
+  "map": {
+    "base": "forest",
+    "pressure": [
+      "mine",
+      "farm",
+      "road"
+    ],
+    "side": "n",
+    "depth": 6,
+    "accent": "grass",
+    "accentAmount": 0.2
+  },
+  "threats": [
+    {
+      "id": "frontier",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Subsidised extraction and clearing",
+      "strength": 3,
+      "from": "pressure",
+      "sources": 3,
+      "catalogue": [
+        87,
+        89
+      ]
+    },
+    {
+      "id": "access",
+      "kind": "frontier",
+      "behaviour": "spread",
+      "label": "Cheap fuel and farm support",
+      "strength": 1,
+      "every": 2,
+      "from": "pressure",
+      "sources": 2,
+      "catalogue": [
+        87,
+        89
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "tiger",
+      "name": "Tiger",
+      "habitat": [
+        "forest"
+      ],
+      "need": 27,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Replant",
+    "defend": "Subsidy watchdog",
+    "remove": "End a subsidy",
+    "protect": "Protected area",
+    "campaign": "Subsidy-reform campaign"
+  },
+  "realWorld": "Ask your representatives to redirect harmful subsidies, and check claims of “net zero” and “carbon neutral” against independent sources before you trust them."
+}

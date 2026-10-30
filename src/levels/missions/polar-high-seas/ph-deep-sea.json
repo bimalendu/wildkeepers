@@ -1,0 +1,94 @@
+{
+  "id": "ph-deep-sea",
+  "title": "The Deep-Sea Gold Rush",
+  "blurb": "Companies hold exploration contracts for metal-rich nodules on the deep seabed. Keep the fleets out and win the case for a moratorium.",
+  "region": "polar-high-seas",
+  "theme": "deepsea",
+  "issue": "ph-deep-sea-issue",
+  "catalogue": [
+    15
+  ],
+  "size": [
+    8,
+    10
+  ],
+  "seed": 216017,
+  "turns": 15,
+  "energy": 3,
+  "floor": 0.83,
+  "map": {
+    "base": "ocean",
+    "accent": "reef",
+    "accentAmount": 0.2,
+    "pressure": [
+      "town"
+    ],
+    "side": "s",
+    "depth": 3
+  },
+  "threats": [
+    {
+      "id": "fleet",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Mining vessels and collectors",
+      "strength": 2,
+      "from": "edge",
+      "sources": 4,
+      "hurts": [
+        "dumbo-octopus"
+      ],
+      "catalogue": [
+        15,
+        14,
+        94
+      ]
+    },
+    {
+      "id": "bycatch",
+      "kind": "poaching",
+      "behaviour": "hunt",
+      "label": "Sediment plumes",
+      "strength": 1,
+      "every": 2,
+      "from": "edge",
+      "sources": 3,
+      "hurts": [
+        "abyssal-coral"
+      ],
+      "catalogue": [
+        15,
+        14,
+        94
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "dumbo-octopus",
+      "name": "Dumbo octopus",
+      "habitat": [
+        "ocean"
+      ],
+      "need": 34,
+      "homes": 2
+    },
+    {
+      "id": "abyssal-coral",
+      "name": "Deep-sea coral",
+      "habitat": [
+        "reef"
+      ],
+      "need": 9,
+      "homes": 2
+    }
+  ],
+  "labels": {
+    "restore": "Let the seabed recover",
+    "defend": "Exclusion zone",
+    "remove": "Halt a trial",
+    "protect": "Deep-sea reserve",
+    "campaign": "Moratorium campaign"
+  },
+  "realWorld": "Ask the companies that make your phone, car and battery whether they will source metal from the deep seabed, and support recycling and the call for a moratorium."
+}
